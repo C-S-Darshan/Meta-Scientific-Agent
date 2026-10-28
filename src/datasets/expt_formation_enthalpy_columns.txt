@@ -1,0 +1,8 @@
+formula
+pearson symbol
+space group
+mpid
+oqmdid
+e_form expt
+e_form mp
+e_form oqmd

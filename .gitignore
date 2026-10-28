@@ -1,0 +1,101 @@
+# ==============================================================================
+# Meta-Scientific Agent - Clean Production .gitignore
+# ==============================================================================
+
+# --- Paper, Manuscripts & Literature ---
+paper/
+IEEE_Access/
+insights/
+*.pdf
+*.tex
+*.bib
+*.bbl
+*.blg
+*.aux
+*.out
+*.spl
+*.synctex.gz
+*Paper*.md
+*paper*.md
+*PLAN*.md
+*plan*.md
+*FEEDBACK*.md
+*RESPONSE*.md
+*TRACKER*.md
+*ANALYSIS*.md
+*analysis*.md
+CLAUDE.md
+ML_Baseline_and_Heldout_Benchmarks.md
+create_ieee_submission_zip.py
+generate_perfect_graphs.py
+generate_all_remade_graphs.py
+fix_access_tables_and_figures.py
+update_ieee_access_markdown.py
+
+# --- Benchmark Suites & Evaluation Scripts ---
+benchmarking/
+benchmarking_colab/
+new_benchmark/
+notebooks/
+colab_package/
+supplementary_exports/
+package_for_colab.py
+create_colab_notebook.py
+colab_requirements.txt
+environment_details.py
+
+# --- Past Experiment Runs & Results ---
+experiments/
+results/
+new benchmark results/
+*.log
+
+# --- Models, Weights & Checkpoints ---
+models/
+lora_adapters/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.dat
+offload/
+
+# --- Raw Data & Datasets ---
+data/
+
+# --- Compressed Archives ---
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# --- Python Environment & Caches ---
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# --- Sensitive Keys & Local Configs ---
+.env
+.env.*
+*.pem
+*.key
+*.token
+
+# --- Frontend Build & Cache ---
+web_ui/node_modules/
+web_ui/dist/
+web_ui/.package-lock.json
+
+# --- OS & Editor Files ---
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+.claudeignore
+

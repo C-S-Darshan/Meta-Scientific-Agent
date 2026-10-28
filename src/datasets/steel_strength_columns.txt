@@ -1,0 +1,17 @@
+formula
+c
+mn
+si
+cr
+ni
+mo
+v
+n
+nb
+co
+w
+al
+ti
+yield strength
+tensile strength
+elongation

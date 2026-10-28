@@ -1,0 +1,12061 @@
+
+ ELEMENT /-   ELECTRON_GAS              0.0000E+00  0.0000E+00  0.0000E+00 !
+ ELEMENT VA   VACUUM                    0.0000E+00  0.0000E+00  0.0000E+00 !
+ ELEMENT FE   BCC_A2                    5.5847E+01  4.4890E+03  2.7280E+01 !
+ ELEMENT CR   BCC_A2                    5.1996E+01  4.0500E+03  2.3560E+01 !
+ ELEMENT MO   BCC_A2                    9.5940E+01  7.7490E+03  2.8660E+01 !
+ ELEMENT CO   HCP_A3                    5.8933E+01  4.7660E+03  3.0040E+01 !
+ SPECIES VA   VA !
+ 
+ PHASE LIQUID:L %  1  1.0 !
+ CONSTITUENT LIQUID:L :FE,CR,MO,CO : !
+ PHASE BCC_A2 %  2 1.0  3.0 !
+ CONSTITUENT BCC_A2 :FE,CR,MO,CO : VA : !
+ PHASE FCC_A1 %  2 1.0  1.0 !
+ CONSTITUENT FCC_A1 :FE,CR,MO,CO : VA : !
+ PHASE SIGMA %  2 10.0  20.0 !
+ CONSTITUENT SIGMA :FE,CR,MO : CO : !
+ ELEMENT FE   BCC_A2                    5.5847E+01  4.4890E+03  2.7280E+01 !
+ELEMENT CR   BCC_A2                    5.1996E+01  4.0500E+03  2.3560E+01 !
+ELEMENT MO   BCC_A2                    9.5940E+01  7.7490E+03  2.8660E+01 !
+ELEMENT CO   HCP_A3                    5.8933E+01  4.7660E+03  3.0040E+01 !
+$
+
+$
+
+$                    VERSION  : ROUND II (JANUARY 1999)
+
+$
+
+$                        FROZEN VERSION
+
+$                          COST - 507
+
+$
+
+$         THERMODYNAMIC DATABASE FOR LIGHT METAL ALLOYS
+
+$
+
+$
+
+$ DEAR COLLEAGUES,
+
+$
+
+$          THIS DATA-BASE CONTAINS THE THERMODYNAMIC DATA AND PHASE
+
+$ DESCRIPTION FOR THE BINARY SYSTEMS WE HAVE DECIDED TO STUDY
+
+$ IN THE COST 507 PROJECT.
+
+$
+
+$          THE UNARY DATA ARE THE SGTE VALUES AS REPORTED BY A. DINSDALE
+
+$ IN THE CALPHAD JOURNAL.
+
+$
+
+$          THE SYSTEMS EVERY GROUP WITHIN THE COORDINATION GROUP C HAS
+
+$ TO PROVIDE ARE LISTED IN THE FIRST COLUMN 1. SOME GROUPS HAVE ALREADY
+
+$ PROVIDED DATA AND THESE ARE LISTED IN COLUMN 2.
+
+$
+
+$
+
+$ GROUP    COLUMN 1                          COLUMN 2
+
+$
+
+$ A                                          B-HF B-TI C-HF
+
+$
+
+$ D3                                         AL-ZN CU-NI CU-SI CU-ZN MG-NI
+
+$                                            CU-Y SI-SN SI-ZN
+
+$
+
+$ D9                                         AL-B AL-C AL-N AL-SI AL-SN
+
+$                                            AL-Y
+
+$                                            B-C  B-N B-SI B-TI C-SI
+
+$                                            MG-Y MG-ZN MG-SI  SI-Y
+
+$                                            SN-ZN
+
+$
+
+$ D(GTT)                                     MN-ZR NI-V SN-ZR V-ZR
+
+$
+
+$ FR3                                        CR-MG CR-SI CR-ZN CU-FE
+
+$                                            CU-MG SI-ZR
+
+$
+
+$ I1                                         AL-CE AL-ND CE-MG
+
+$
+
+$ N1                                         AL-FE FE-MG MG-MN MN-SI
+
+$
+
+$ S2                                         AL-MN C-TI CR-MN FE-SI
+
+$                                            N-TI
+
+$
+
+$ SF1                                        CR-CU CR-ZR CU-ZR MG-ZR
+
+$                                            SI-TI
+
+$
+
+$ UK1                                        AL-CR AL-CU AL-LI AL-MG
+
+$                                            AL-MO
+
+$                                            AL-NB AL-TA AL-TI AL-V
+
+$                                            AL-W
+
+$                                            AL-ZR CR-TI CU-LI FE-TI
+
+$                                            LI-MG
+
+$                                            LI-ZR MN-TI MO-TI NB-TI
+
+$                                            SI-V
+
+$                                            TA-TI TI-V TI-W*
+
+$
+
+$ SGTE                                       CR-V MN-V FE-MN
+
+$
+
+$---------------------------------------------------------------------
+
+$
+
+$                          TERNARY SYSTEMS
+
+$
+
+$
+
+$
+
+$ A                                          B-HF-TI
+
+$
+
+$ D (CLAUSTHAL)                              AL-N-TI
+
+$
+
+$ D3                                         AL-CU-MG AL-SI-ZN
+
+$                                            CU-MG-SI CU-MG-Y
+
+$
+
+$ D9                                         AL-C-SI AL-MG-SI AL-MG-ZN
+
+$                                            CU-MG-ZN AL-SN-ZN
+
+$
+
+$ D (GTT)                                    AL-SN-ZN
+
+$
+
+$ F1                                         AL-MG-MN
+
+$
+
+$ N1                                         AL-FE-SI AL-MN-SI
+
+$
+
+$ S1                                         AL-FE-MN
+
+$
+
+$ SF1                                        CR-CU-ZR
+
+$
+
+$ UK1                                        AL-CR-TI AL-CU-LI AL-LI-MG
+
+$                                            AL-MO-TI AL-NB-TI AL-TA-TI
+
+$                                            AL-TI-V AL-TI-W
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$
+
+$
+
+$----------------------------------------------------------------------
+
+$          COMMENTS OR MESSAGES SHOULD BE SENT TO
+
+$
+
+$                       IANSARA@LTPCM.INPG.FR
+
+$
+
+$                       PHONE NUMBER +33 76 82 65 13
+
+$
+
+$                       FAX NUMBER   +33 76 82 67 67
+
+$
+
+$          THANKS FOR YOUR COOPERATION.
+
+$
+
+$--------------------------------------------------------------------
+
+$
+
+$              ELEMENTS AND PHASE DESCRIPTION
+
+$
+
+
+ELEMENT  /-   ELECTRON_GAS        0.0         0.0         0.0 
+
+ELEMENT  VA   VACUUM              0.0000E+00  0.0000E+00  0.0000E+00 
+
+ELEMENT  AL   FCC_A1              2.6982E+01  4.5773E+03  2.8322E+01 
+
+ELEMENT  AR   GAS                 3.9948E+01  6.1965E+03  1.5484E+02 
+
+ELEMENT  B    BETA_RHOMBO_B       1.0811E+01  1.2220E+03  5.9000E+00 
+
+ELEMENT  C    GRAPHITE            1.2011E+01  1.0540E+03  5.7400E+00 
+
+ELEMENT  CE   FCC_A1              1.4012E+02  7.2801E+03  6.9454E+00 
+
+ELEMENT  CR   BCC_A2              5.1996E+01  4.0500E+03  2.3560E+01 
+
+ELEMENT  CU   FCC_A1              6.3546E+01  5.0041E+03  3.3150E+01 
+
+ELEMENT  FE   BCC_A2              5.5847E+01  4.4890E+03  2.7280E+01 
+
+ELEMENT  HF   HCP_A3              1.7849E+02  5.8450E+03  4.3560E+01 
+
+ELEMENT  LI   BCC_A2              6.9410E+00  4.6233E+03  2.9095E+01 
+
+ELEMENT  MG   HCP_A3              2.4305E+01  4.9980E+03  3.2671E+01 
+
+ELEMENT  MN   CBCC_A12            5.4938E+01  4.9960E+03  3.2008E+01 
+
+ELEMENT  MO   BCC_A2              9.5940E+01  4.5890E+03  2.8560E+01 
+
+ELEMENT  N    1/2_MOLE_N2(G)      1.4007E+01  4.3350E+03  9.5751E+01 
+
+ELEMENT  O    1/2_MOLE_O2(G)      1.5999E+01  4.3410E+03  1.0252E+02 
+
+ELEMENT  NB   BCC_A2              9.2906E+01  5.2200E+03  3.6270E+01 
+
+ELEMENT  ND   DHCP                1.4424E+01  7.1337E+03  7.1086E+01 
+
+ELEMENT  NI   FCC_A1              5.8690E+01  4.7870E+03  2.9797E+01 
+
+ELEMENT  SI   DIAMOND_A4          2.8085E+01  3.2175E+03  1.8820E+01 
+
+ELEMENT  SN   BCT_A5              1.1869E+02  6.3220E+03  5.1195E+01 
+
+ELEMENT  TA   BCC_A2              1.8095E+02  5.6819E+03  4.1472E+01 
+
+ELEMENT  TI   HCP_A3              4.7880E+01  4.8240E+03  3.0720E+01 
+
+ELEMENT  V    BCC_A2              5.0942E+01  4.5070E+03  3.0890E+01 
+
+ELEMENT  W    BCC_A2              1.8385E+02  4.9700E+03  3.2620E+01 
+
+ELEMENT  Y    HCP_A3              8.89059E+01  5.9664E+03  4.4434E+01 
+
+ELEMENT  ZN   HCP_A3              6.5380E+01  5.6567E+03  4.1631E+01 
+
+ELEMENT  ZR   HCP_A3              9.1224E+01  5.5663E+03  3.9181E+01 
+
+$$$
+
+$$$
+
+$
+
+$$$
+
+$$ ONLY NEEDED FOR THE GAS PHASE AND THE B4 C PHASE
+
+$$   GAS PHASE PROGRAMMED FOR B-C-SI ONLY
+
+SPECIES  AL1     AL1 
+
+SPECIES  AL2     AL2 
+
+SPECIES B11 C     B11 C1
+
+SPECIES B12      B12 
+
+SPECIES B2       B2 
+
+SPECIES BC       B1 C1 
+
+SPECIES  B1      B1 
+
+$SPECIES BC        B1 C1 
+
+SPECIES  B1 C1    B1 C1 
+
+$SPECIES  B1 C2    B1 C2 
+
+SPECIES  B4      B4 
+
+SPECIES  B1 N1    B1 N1 
+
+SPECIES  C1      C1 
+
+SPECIES  C1 SI1   C1 SI1 
+
+SPECIES  C1 SI2   C1 SI2 
+
+SPECIES  C2      C2 
+
+SPECIES  C2 SI1   C2 SI1 
+
+SPECIES  C3      C3 
+
+SPECIES  C4      C4 
+
+SPECIES  C5      C5 
+
+SPECIES  CB2     B2 C1 
+
+SPECIES  C2 B     B1 C2 
+
+SPECIES  CU2     CU2 
+
+SPECIES  MG1     MG1 
+
+SPECIES  MG2 SN1  MG2 SN1 
+
+SPECIES  N1      N1 
+
+SPECIES  N2      N2 
+
+SPECIES  N3      N3 
+
+SPECIES  SI1     SI1 
+
+SPECIES  SI2     SI2 
+
+SPECIES  SI3     SI3 
+
+SPECIES  TI1     TI 
+
+$SPECIES  Y       Y1 
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PHASE LIQUID:L X 1 1 
+
+
+
+$
+
+$PHASE ALB2
+
+$
+
+
+
+$
+
+$PHASE ALB12_ALPHA
+
+$
+
+
+
+$
+
+$PHASE ALB12_BETA
+
+$
+
+
+
+$
+
+$PHASE AL4 C3
+
+$
+
+
+
+$
+
+$PHASE AL4 SIC4
+
+$
+
+
+
+$
+
+$
+
+$PHASE AL8 SIC7
+
+$
+
+
+
+$
+
+$PHASE AL2_CEND
+
+$
+
+
+
+$
+
+$PHASE AL11_CEND3 L
+
+$
+
+
+
+$
+
+$PHASE AL11_CEND3 H
+
+$
+
+
+
+$
+
+$PHASE AL_CEND3 L
+
+$
+
+
+
+$
+
+$PHASE AL_CEND3 H
+
+$
+
+
+
+$
+
+$PHASE AL3_CEND
+
+$
+
+
+
+$
+
+$PHASE AL_CEND
+
+$
+
+
+
+$
+
+$PHASE ALCE_AMORPHOUS
+
+$
+
+
+
+$
+
+$PHASE ALCR2
+
+$
+
+
+
+$
+
+$PHASE AL4 CR
+
+$
+
+
+
+$
+
+$PHASE AL8 CR5_H
+
+$
+
+
+
+$
+
+$PHASE AL8 CR5_L
+
+$
+
+
+
+$
+
+$
+
+$PHASE AL9 CR4_H
+
+$
+
+
+
+$
+
+$PHASE AL9 CR4_L
+
+$
+
+
+
+$
+
+$PHASE AL11 CR2
+
+$
+
+
+
+$
+
+$PHASE AL13 CR2
+
+$
+
+
+
+$
+
+$PHASE ALCU_DELTA
+
+$
+
+
+
+$
+
+$PHASE ALCU_EPSILON
+
+$
+
+
+
+$%
+
+$PHASE ALCU_ETA
+
+$
+
+
+
+$
+
+$PHASE ALCU_THETA
+
+$
+
+
+
+$
+
+$PHASE ALCU_PRIME
+
+$
+
+
+
+$
+
+$PHASE ALCU_ZETA
+
+$
+
+
+
+$
+
+$PHASE ALCULI_TB
+
+$
+
+
+
+$
+
+$PHASE ALCULI_R
+
+$
+
+
+
+$
+
+$PHASE ALCULI_T1
+
+$
+
+
+
+$
+
+$PHASE ALCULI_T2
+
+$
+
+
+
+$
+
+$PHASE ALCUZN_T
+
+$
+
+
+
+$
+
+$PHASE AL13 FE4
+
+$
+
+
+
+$
+
+$PHASE AL2 FE
+
+$
+
+
+
+$
+
+$PHASE AL5 FE2
+
+$
+
+
+
+$
+
+$PHASE AL5 FE4
+
+$
+
+
+
+$
+
+$PHASE ALFESI_ALPHA
+
+$
+
+
+
+$
+
+$PHASE ALFESI_BETA
+
+$
+
+
+
+$
+
+$PHASE ALFESI_GAMMA
+
+$
+
+
+
+$
+
+$PHASE ALFESI_DELTA
+
+$
+
+
+
+$
+
+$PHASE ALFESI_TAU1
+
+$
+
+
+
+$
+
+$PHASE ALFESI_TAU3
+
+$
+
+
+
+$
+
+$PHASE ALLI
+
+$
+
+
+
+$
+
+$PHASE AL2 LI3
+
+$
+
+
+
+$
+
+$PHASE AL4 LI9
+
+$
+
+
+
+$
+
+$ THIS WILL NEED TO BE CHANGED
+
+$ ATTENTION LES LIGNES CI-DESSOUS MODELE DE NIGEL
+
+
+
+$
+
+$
+
+$PHASE ALLIMG_TAU
+
+$
+
+
+
+$
+
+$PHASE ALMG_BETA
+
+$
+
+
+
+$
+
+$PHASE ALMG_EPSILON
+
+$
+
+
+
+$
+
+$PHASE ALMG_GAMMA (AL12 MG17)
+
+$
+
+
+
+$
+
+$PHASE ALMGMN_T
+
+$
+
+
+
+$
+
+$PHASE AL11 MN4
+
+$
+
+
+
+$
+
+$PHASE AL12 MN
+
+$
+
+
+
+$
+
+$PHASE AL4 MN
+
+$
+
+
+
+$
+
+$PHASE AL6 MN
+
+$
+
+
+
+$
+
+$PHASE AL8 MN5_D810
+
+$
+
+
+
+$
+
+$PHASE ALMNSI_ALPHA
+
+$
+
+
+
+$
+
+$PHASE ALMNSI_NBETA
+
+$
+
+$PHASE ALMNSI_NBETA  X 4 15 1 4 6 
+
+$NOW CALLED (TIM JAN. 98)
+
+$
+
+
+
+$
+
+$PHASE ALMNSI_DELTA
+
+$
+
+
+$
+
+
+$
+
+$PHASE AL12 MO
+
+$
+
+
+
+$
+
+$PHASE AL4 MO
+
+$
+
+
+
+$
+
+$PHASE AL5 MO
+
+$
+
+
+
+$
+
+$PHASE AL63 MO37
+
+$
+
+
+
+$
+
+$PHASE AL8 MO3
+
+$
+
+
+
+$
+
+$PHASE ALMO
+
+$
+
+
+
+$
+
+$PHASE ALN
+
+$
+
+
+
+$
+
+$PHASE ALND
+
+$
+
+$PHASE ALND X 2 1 1 
+
+$CONST ALND : AL : ND : 
+
+$
+
+$PHASE ALND_AMORPHOUS
+
+$
+
+
+
+$
+
+$PHASE ALND2
+
+$
+
+
+
+$PHASE ALND2
+
+$
+
+$PHASE ALND3
+
+$
+
+$PHASE ALND3 X 2 1 3 
+
+$CONST ALND3 : AL : ND : 
+
+$
+
+$PHASE ALSNZR
+
+$
+
+
+
+$
+
+$PHASE ALTI
+
+$
+
+
+
+$
+
+$PHASE ALM_D019
+
+$
+
+
+
+$
+
+$PHASE AL2 TI
+
+$
+
+
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+
+
+$
+
+$PHASE  AL3 TA2_L
+
+$
+
+
+
+$
+
+$
+
+$PHASE AL3 TA2_H
+
+$
+
+
+
+$
+
+$PHASE AL11 TI5
+
+$
+
+
+
+$
+
+$PHASE AL3 V
+
+$
+
+$PHASE AL3 V X 2 3 1 
+
+$CONST AL3 V : AL : V : 
+
+$
+
+$PHASE AL7 V
+
+$
+
+
+
+$
+
+$PHASE AL8 V5
+
+$
+
+
+
+$
+
+$PHASE AL10 V
+
+$
+
+
+
+$
+
+$PHASE AL23 V4
+
+$
+
+
+
+$
+
+$PHASE AL12 W
+
+$
+
+
+
+$
+
+$PHASE AL2 W
+
+$
+
+
+
+$
+
+$PHASE AL4 W
+
+$
+
+
+
+$
+
+$PHASE AL5 W
+
+$
+
+
+
+$
+
+$PHASE AL7 W3
+
+$
+
+
+
+$
+
+$PHASE AL77 W23
+
+$
+
+
+
+$
+
+$PHASE AL3 Y
+
+$
+
+
+
+$
+
+$PHASE AL2 Y
+
+$
+
+
+
+$
+
+$PHASE ALY
+
+$
+
+
+
+$
+
+$SPECIES CBB  B2 C1
+
+SPECIES CBC   B1 C2
+
+$
+
+$PHASE AL2 Y3
+
+$
+
+
+
+$
+
+$PHASE ALY2
+
+$
+
+
+
+$
+
+$PHASE AL3 Y5
+
+$
+
+
+
+$
+
+$PHASE AL3 ZR
+
+$
+
+
+
+$
+
+$PHASE AL2 ZR
+
+$
+
+
+
+$
+
+$PHASE AL3 ZR2
+
+$
+
+
+
+$
+
+$PHASE ALZR
+
+$
+
+
+
+$
+
+$PHASE AL4 ZR5
+
+$
+
+
+
+$
+
+$PHASE AL2 ZR3
+
+$
+
+
+
+$
+
+$PHASE AL3 ZR5
+
+$
+
+
+
+$
+
+$PHASE ALZR2
+
+$
+
+
+
+$
+
+$PHASE ALZR3
+
+$
+
+
+
+$
+
+$PHASE BETA_RHOMBO_B
+
+$
+
+
+
+$
+
+$PHASE B4 C
+
+$
+
+
+
+$
+
+$PHASE B4 C
+
+$
+
+$PHASE B4 C X 2 12 1 
+
+$CONST B4 C : B : B1 C2,B4,C2 SI1,C3 : 
+
+$
+
+$PHASE B_NSI
+
+$
+
+
+
+$
+
+$PHASE BN_HP4
+
+$
+
+
+
+$
+
+$PHASE B3 SI
+
+$
+
+
+
+$
+
+$PHASE B6 SI
+
+$
+
+
+
+$
+
+$PHASE BTI
+
+$
+
+
+
+$
+
+$PHASE B4 TI3
+
+$
+
+
+
+$
+
+$PHASE B2 TI
+
+$
+
+
+
+$
+
+$MHR CHANGES IN NEXT THREE PHASES, REPLACING MEB ETC
+
+$PHASE BM
+
+$
+
+
+
+$
+
+$PHASE B4 M3
+
+$
+
+
+
+$
+
+$PHASE B2 M
+
+$
+
+
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PHASE BCC_A2 XB 2 1 3 
+
+
+
+$
+
+$PHASE BCC_B2
+
+$
+
+$PHASE BCC_B2 XD 3 .5 .5  3 
+
+$PHASE BCC_B2 X 3 .5 .5  3 
+
+$CONST BCC_B2 : AL%,FE%,CU%,MG,MN,MO,NB,SI,TA,TI,V,W,ZN :
+
+$               AL,FE,CU,MG,MN,MO%,NB,SI%,TA,TI,V,W%,ZN% : VA : 
+
+$
+
+
+
+
+
+
+$
+
+$PHASE CBCC_A12
+
+$
+
+
+
+$
+
+$PHASE BCT_A5
+
+$
+
+
+
+$
+
+$PHASE CSI
+
+$
+
+
+
+$
+
+$PHASE CEMG
+
+$
+
+
+
+$
+
+$PHASE CEMG2
+
+$
+
+
+
+$
+
+$PHASE CEMG3
+
+$
+
+
+
+$
+
+$PHASE CE5 MG41
+
+$
+
+
+
+$
+
+$PHASE CE2 MG17
+
+$
+
+
+
+$
+
+$PHASE CEMG12
+
+$
+
+
+
+$
+
+$PHASE CR3 MN5
+
+$
+
+
+
+$
+
+$PHASE CR3 SI_A15
+
+$
+
+
+
+$
+
+$PHASE CUB_A15
+
+$
+
+
+
+$
+
+$PHASE CR5 SI3
+
+$
+
+
+
+$
+
+$PHASE CRSI
+
+$
+
+
+
+$
+
+$PHASE CRSI2
+
+$
+
+
+
+$
+
+$PHASE CR2 TI
+
+$
+
+$PHASE CR2 TI  X 2 .645 .355 
+
+$CONST CR2 TI  : CR : TI : 
+
+$
+
+$PHASE CRZN13
+
+$
+
+
+
+$
+
+$PHASE CRZN17
+
+$
+
+
+
+$
+
+$PHASE CUMGSI_SIGMA
+
+$
+
+
+
+$
+
+$PHASE CUMGSI_TAU
+
+$
+
+
+
+$
+
+$PHASE CU2 Y_H
+
+$
+
+
+
+$
+
+$PHASE CU2 Y_R
+
+$
+
+
+
+$
+
+$PHASE CUY
+
+$
+
+
+
+$
+
+$PHASE CU7 Y2
+
+$
+
+
+
+$
+
+$PHASE CU6 Y
+
+$
+
+
+
+$
+
+$PHASE CU4 Y
+
+$
+
+
+
+$
+
+$PHASE CUB_A13
+
+$
+
+
+
+$
+
+$PHASE CUB_A15
+
+$
+
+$PHASE CUB_A15 X 2 3 1 
+
+$
+
+$PHASE CUB_A15  X  2 3  1 
+
+$CONST CUB_A15  : MO : AL :  
+
+$
+
+$PHASE CUMG2
+
+$
+
+
+
+$
+
+$PHASE CU87 SI13_KAPPA
+
+$
+
+$PHASE CU87 SI13_KAPPA X 2 .87 .13 
+
+$CONST CU87 SI13_KAPPA : CU : SI : 
+
+$
+
+$PHASE CU85 SI15_BETA
+
+$
+
+$PHASE CU85 SI15_BETA X 2 .85 .15 
+
+$CONST CU85 SI15_BETA : CU : SI : 
+
+$
+
+$PHASE CU33 SI7_DELTA
+
+$
+
+
+
+$
+
+$PHASE CU56 SI11_GAMMA
+
+$
+
+
+
+$
+
+$PHASE CU4 SI_EPSILON
+
+$
+
+
+
+$
+
+$PHASE CU19 SI6_ETA
+
+$
+
+
+
+$
+
+$PHASE CUZN_EPS
+
+$
+
+$PHASE CUZN_EPS X 2 1 1 
+
+$CONST CUZN_EPS : CU,ZN : VA : 
+
+$
+
+$PHASE CUZN_GAMMA
+
+$
+
+
+
+$
+
+$PHASE CU10 ZR7
+
+$
+
+
+
+$
+
+$PHASE CU36 ZR10
+
+$
+
+$PHASE CU36 ZR10 X 2 36 10 
+
+$CONST CU36 ZR10 : CU : ZR : 
+
+$
+
+$PHASE CU51 ZR14
+
+$
+
+
+
+$
+
+$PHASE CU8 ZR3
+
+$
+
+
+
+$
+
+$PHASE CU5 ZR
+
+$
+
+
+
+$
+
+$PHASE CUZR
+
+$
+
+
+
+$
+
+$PHASE CUZR2
+
+$
+
+
+
+$
+
+$PHASE DHCP
+
+$
+
+
+
+$
+
+$PHASE FETI
+
+$
+
+
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PHASE FCC_A1 XF 2 1 1 
+
+$CONST FCC_A1 : AL%,B,CE,CR,CU%,FE%,HF,LI,MG,MN,MO,ND,NI,SI,SN,TA,TI,V,W,Y,
+
+
+
+$
+
+$PHASE FCC_L12
+
+$
+
+$PHASE FCC_L12 XQ 3 0.75 0.25 1 
+
+$CONST FCC_L12 : AL%,CR,LI,MG,TI : AL,CR%,LI,MG,TI% : VA : 
+
+$CONST FCC_L12 : AL,B,CE,CR,CU,FE,HF,LI,MG,MN,MO,ND,NI,SI,SN,TA,TI,V,W,Y,
+
+$CONST FCC_L12 : AL,B,CE,CR,CU,FE,HF,LI,MG,MN,MO,NB,ND,NI,SI,SN,TA,TI,V,W,Y,
+
+$       ZN,ZR : AL,B,CE,CR,CU,FE,HF,LI,MG,MN,MO,NB,ND,NI,SI,SN,TA,TI,V,W,Y,
+
+$       ZN,ZR : C,N,VA% : 
+
+$
+
+$PHASE FESI
+
+$
+
+
+
+$
+
+$PHASE FE2 SI
+
+$
+
+
+
+$
+
+$PHASE FE5 SI3
+
+$
+
+
+
+$
+
+$PHASE FESI2_H
+
+$
+
+
+
+$
+
+$PHASE FESI2_L
+
+$
+
+
+
+$
+
+$PHASE DIAMOND_A4
+
+$
+
+
+
+$
+
+$PHASE GAS
+
+$
+
+$PHASE GAS X 1 1 
+
+$$ ASSESSED FOR B,C,SI ONLY
+
+$
+
+
+
+
+$
+
+$PHASE GAMMA_D83
+
+$
+
+
+
+$
+
+$PHASE GAMMA_H
+
+$
+
+
+
+$
+
+$PHASE GRAPHITE
+
+$
+
+
+
+$
+
+$PHASE HCP_A3
+
+$
+
+
+
+
+$
+
+$PHASE HCP_ZN
+
+$
+
+
+
+$
+
+$PHASE LAVES_C14
+
+$
+
+
+
+
+$
+
+$PHASE LAVES_C15
+
+$
+
+
+
+
+$
+
+$PHASE LAVES_C36
+
+$
+
+
+
+$
+
+$PHASE HIGH_SIGMA
+
+$
+
+
+
+$
+
+$PHASE MG2 NI
+
+$
+
+
+
+$
+
+$PHASE MG2 SI
+
+$
+
+
+
+$
+
+$PHASE MG2 SN
+
+$
+
+
+
+$
+
+$PHASE MG24 Y5
+
+$
+
+
+
+$
+
+$PHASE MGY_GAMMA   (IS IT MGYOB?)
+
+$
+
+
+
+$
+
+$PHASE MG2 Y
+
+$
+
+
+
+$
+
+$PHASE MG7 ZN3
+
+$
+
+
+
+$
+
+$PHASE MGZN
+
+$
+
+
+
+$
+
+$PHASE MG2 ZN3
+
+$
+
+
+
+$
+
+$PHASE MGZN2
+
+$
+
+
+
+$
+
+$PHASE MG2 ZN11
+
+$
+
+
+
+$
+
+$PHASE MN3 SI (CF16_DO3)
+
+$
+
+
+
+$
+
+$PHASE MNSI (FESI_B20_CP8)
+
+$
+
+
+
+$
+
+$PHASE  MN11 SI19 (T)
+
+$
+
+
+
+$
+
+$PHASE MN6 SI (HR53_R)
+
+$
+
+
+
+$
+
+$PHASE MN9 SI2 (OI186_N)
+
+$
+
+
+
+$
+
+$PHASE  MN5 SI3 (HP16_D88)
+
+$
+
+
+
+$
+
+$PHASE ALPHA_TIMN
+
+$
+
+
+
+$
+
+$PHASE BETA_TIMN
+
+$
+
+
+
+$
+
+$PHASE MN3 TI
+
+$
+
+
+
+$
+
+$PHASE MN4 TI
+
+$
+
+
+
+$
+
+$PHASE MN2 ZR
+
+$
+
+
+
+$
+
+$PHASE NI3 V
+
+$
+
+
+
+$
+
+$PHASE NI2 V
+
+$
+
+
+
+$
+
+$PHASE NI9 V31 X 2 9 31 
+
+$CONST NI9 V31 : NI : V : 
+
+$
+
+$PHASE NI2 V7
+
+$
+
+
+
+$
+
+$PHASE NI2 V
+
+$
+
+$
+
+$PHASE OMEGA
+
+$
+
+
+
+$
+
+
+
+$
+
+$PHASE PHI
+
+$
+
+
+
+$
+
+$PHASE SIGMA
+
+$
+
+PHASE SIGMA X 3 8 4 18 
+
+
+$
+
+
+
+$
+
+$PHASE SI2 TI
+
+$
+
+
+
+$
+
+$PHASE SITI
+
+$
+
+
+
+$
+
+$PHASE SI4 TI5
+
+$
+
+
+
+$
+
+$PHASE SI3 TI5
+
+$
+
+
+
+$
+
+$PHASE SITI3
+
+$
+
+
+
+$
+
+$PHASE SIV3
+
+$
+
+
+
+$
+
+$PHASE SI2 V
+
+$
+
+
+
+$
+
+$PHASE SI3 V5
+
+$
+
+
+
+$
+
+$PHASE SI5 V6
+
+$
+
+
+
+$
+
+$PHASE SI3 Y5
+
+$
+
+
+
+$
+
+$PHASE SI4 Y5
+
+$
+
+
+
+$
+
+$PHASE SIY
+
+$
+
+
+
+$
+
+$PHASE SI5 Y3_R
+
+$
+
+
+
+$
+
+$PHASE SI5 Y3_H
+
+$
+
+
+
+$
+
+$PHASE SI2 Y_R
+
+$
+
+
+
+$
+
+$PHASE SI2 Y_H
+
+$
+
+
+
+$
+
+$PHASE SI2 ZR
+
+$
+
+
+
+$
+
+$PHASE SI2 ZR3
+
+$
+
+
+
+$
+
+$PHASE SI3 ZR5
+
+$
+
+
+
+$
+
+$PHASE SI4 ZR5
+
+$
+
+
+
+$
+
+$PHASE SIZR
+
+$
+
+
+
+$
+
+$PHASE SIZR2
+
+$
+
+
+
+$
+
+$PHASE SIZR3
+
+$
+
+
+
+$
+
+$PHASE SNTI3
+
+$
+
+
+
+$
+
+$PHASE SNTI2
+
+$
+
+
+
+$
+
+$PHASE SN3 TI5
+
+$
+
+
+
+$
+
+$PHASE SN5 TI6
+
+$
+
+
+
+$
+
+$PHASE SN2 ZR
+
+$
+
+
+
+$
+
+$PHASE SN3 ZR5
+
+$
+
+
+
+$
+
+$PHASE SNZR4
+
+$
+
+
+
+$
+
+$PHASE TAU
+
+$
+
+
+
+$
+
+$PHASE TI2 N
+
+$
+
+
+
+$
+
+$ PHASE TI3 N2
+
+$
+
+
+
+$
+
+$PHASE TI4 N3
+
+$
+
+
+
+$
+
+$PHASE TI2 ALN
+
+$
+
+
+
+$
+
+$PHASE TI3 AL2 N2
+
+$
+
+
+
+$
+
+$PHASE TI3 ALN
+
+$
+
+
+
+$
+
+
+
+$
+
+$PHASE V2 ZR
+
+$
+
+
+
+$
+
+$
+
+$---------------------------------------------------------------
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$----------------------------------------------------------------
+
+$
+
+$
+
+
+
+
+
+$$$
+
+
+$$$
+
+
+
+$TYPE_DEF D GES AMEND_PHASE_DESCRIPTION BCC_B2 MAGNETIC -1 0.400, 
+
+
+
+
+
+
+$ IF/THEN IS PYCALPHAD INCOMPATIBLE - BRANDON BOCKLUND 2021-05-29
+
+$TYPE_DEF R IF(AL AND FE) THEN TDB RESTORE_PH AL5 FE4 
+
+
+$TYPE_DEF Q GES AMEND_PHASE_DESCRIPTION FCC_L12 DIS_PART FCC_A1,
+
+$
+
+$
+
+$--------------------------------------------------------------------
+
+$
+
+$FUNCTION RTLNP 298.15 95.8337776909*T;
+$FUNCTION RTLNP 298.15 8.31451*T*LN(1.E-5*P);
+$
+
+$--------------------------------------------------------------------
+
+$
+
+$                           UNARY DATA
+
+$
+
+$ ALUMINIUM (GHSERAL FOR FCC_A1)
+
+$
+
+FUNCTION GHSERAL 298.15 -7976.15+137.093038*T-24.3671976*T*LOG(T)
+$
+
+$FUNCTION GHSERAL 298.15 -7976.15+137.071542*T-24.3671976*T*LOG(T)
+$                   -1.884662E-03*T**2-0.877664E-06*T**3+74092*T**(-1);
+$          700.00 Y -11276.24+223.02695*T-38.5844296*T*LOG(T)
+
+$
+
+$         +18.531982E-03*T**2-5.764227E-06*T**3+74092*T**(-1);
+$          933.60 Y -11277.683+188.661987*T-31.748192*T*LOG(T)
+
+$                   -1234.264 E25*T**(-9);
+$
+
+$---------------------------------------------------------------------------
+
+$
+
+$ BORON  (GHSERBB FOR BETA_RHOMBO_B)
+
+$
+
+FUNCTION GHSERBB 298.15 -7735.284+107.111864*T-15.6641*T*LOG(T)
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$ CERIUM  (GHSERCE FOR FCC_A1)
+
+$
+
+FUNCTION GHSERCE 298.15 -7160.519+84.23022*T-22.3664*T*LOG(T)
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$ CHROMIUM  (GHSERCR FOR BCC_A2)
+
+$
+
+FUNCTION GHSERCR 298.15
+
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$ COPPER (GHSERCU FOR FCC_A1)
+
+$
+
+$
+
+FUNCTION GHSERCU 298.15 -7770.458+130.485235*T-24.112392*T*LOG(T)
+
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$ GRAPHITE (GHSERCC FOR GRAPHITE)
+
+$
+
+FUNCTION GHSERCC 298.15
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$ IRON   (GHSERFE FOR BCC_A2 PARAMAGNETIC)
+
+$
+
+FUNCTION GHSERFE 298.15 1225.7+124.134*T-23.5143*T*LOG(T)
+
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ HAFNIUM (GHSERHF FOR HAFNIUM)
+
+$
+
+FUNCTION GHSERHF 298.15 -6987.297+110.744026*T-22.7075*T*LN(T)
+
+
+$------------------------------------------------------------------------
+
+$
+
+$
+
+$ LITHIUM    (GHSERLI FOR BCC_A2)
+
+$
+
+FUNCTION GHSERLI 200.00 -10583.817+217.637482*T-38.940488*T*LOG(T)
+
+
+
+
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ MAGNESIUM  (GHSERMG FOR HCP_A3)
+
+$
+
+FUNCTION GHSERMG 298.15 -8367.34+143.675547*T-26.1849782*T*LOG(T)
+
+
+$
+
+$--------------------------------------------------------------------
+
+$
+
+$ MANGANESE (GHSERMN FOR CBCC_A12)
+
+$
+
+FUNCTION GHSERMN 298.15 -8115.28+130.059*T-23.4582*T*LOG(T)
+
+$
+
+$
+
+$ --------------------------------------------------------------------
+
+$
+
+$ MOLYBDENUM (GHSERMO FOR BCC_A2)
+
+$
+
+FUNCTION GHSERMO 298.15 -7746.302+131.9197*T-23.56414*T*LN(T)
+
+$
+
+$-------------------------------------------------------------------
+
+$
+
+$ NITROGEN (GHSERNN FOR MONOATOMIC N2 )
+
+$
+
+FUNCTION GHSERNN 298.15
+
+
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ NEODYMIUM (GHSERND FOR DCHP)
+
+$
+
+FUNCTION GHSERND 298.15 -8402.93+111.10239*T-27.0858*T*LOG(T)
+$
+
+$------------------------------------------------------------------------
+
+
+
+$
+
+$
+
+$ NIOBIUM (GHSERNB FOR BCC_A2)
+
+$
+
+FUNCTION GHSERNB 298.15 -8519.353+142.045475*T-26.4711*T*LN(T)
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ NICKEL (GHSERNI FOR FCC_A1)
+
+$
+
+FUNCTION GHSERNI 298.15
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ OXYGEN (GHSEROO FOR GA
+
+FUNCTION GHSEROO 298.15 -3480.87-25.503038*T-11.136*T*LN(T)
+
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ SILICON  (GHSERSI FOR DIAMOND_A4)
+
+$
+
+FUNCTION GHSERSI 298.15 -8162.609+137.236859*T-22.8317533*T*LOG(T)
+
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ TANTALUM (GHSERTA FOR BCC_A2)
+
+$
+
+FUNCTION GHSERTA 298.15 -7285.889+119.139858*T-23.7592624*T*LN(T)
+$------------------------------------------------------------------------
+
+$
+
+$ TIN (GHSERSN FOR BCT_A5)
+
+$
+
+FUNCTION GHSERSN 100.00 -7958.517+122.765451*T-25.858*T*LOG(T)
+
+
+
+
+
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ TITANIUM (GHSERTI FOR HCP_A3)
+
+$
+
+FUNCTION GHSERTI 298.15 -8059.921+133.615208*T-23.9933*T*LOG(T)
+
+
+
+
+
+
+
+$
+
+$----------------------------------------------------------------------
+
+$
+
+$ VANADIUM (GHSERV FOR BCC_A2)
+
+$
+
+$
+
+FUNCTION GHSERV 298.15
+
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+FUNCTION GHSERW 298.15 -7646.311+130.4*T-24.1*T*LN(T)-1.936E-3*T**2
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ YTTRIUM (GHSERY FOR HCP_A3)
+
+$
+
+FUNCTION GHSERY 298.15 -7347.055+117.532124*T-23.8685*T*LOG(T)
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$MHR ZINC (GHSERZN FOR HCP_ZN) HCP_A3 IS MORE POSITIVE
+
+$
+
+FUNCTION GHSERZN 298.15 -7285.787+118.470069*T-23.701314*T*LOG(T)
+
+$
+
+$
+
+$ -------------------------------------------------------------------
+
+$
+
+$ ZIRCONIUM (GHSERZR FOR HCP_A3)
+
+$
+
+FUNCTION GHSERZR 130.00 -7827.595+125.64905*T-24.1618*T*LOG(T)
+$
+
+$---------------------------------------------------------------------------
+
+$
+
+
+
+$                            GASEOUS SPECIES
+
+$
+
+$ ------ FOR THE AL-N-TI SYSTEM (BEGIN)
+
+$
+
+FUNCTION F57 T 2.98130E+02 +323947.58-25.1480943*T-20.859*T*LN(T)
+
+
+FUNCTION F346 T 2.98130E+02
+
+
+FUNCTION F8433 T 2.98130E+02 +466676.993-100677.291*T**(-1)
+
+
+$
+
+$--------------------------------(END)
+
+$ ------ FOLLOWING FUNCTIONS ARE FROM [JANAF]:
+FUNCTION F1559 T
+
+
+FUNCTION F1786 T
+$ [JANAF 6/66]
+
+
+FUNCTION F1835 T
+$ [JANAF 84]
+
+
+FUNCTION F7202 T
+$ [JANAF 82]
+
+
+FUNCTION F7307 T
+$ [JANAF 9/65]
+
+
+FUNCTION F7363 T
+$ [JANAF 12/70]
+
+
+FUNCTION F1780 T
+$ [JANAF 6/66]
+
+
+$
+
+$
+
+$***********************************************************************
+
+$
+
+$
+
+$                    LATTICE STABILITIES OF THE ELEMENTS
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$
+
+$ PHASE BCC_A2
+
+$
+
+$
+
+$ IN SSOL AT KTH  FOR  BCC_A2,AL   10083.44-4.8116*T
+
+$ IN NIGEL'S FILE FOR AL-TI -4.812*T
+
+FUNCTION GBCCAL 298.15 10083.00-4.813*T+GHSERAL;
+PARAMETER G(BCC_A2,AL:VA;
+$
+
+$PARAMETER G(BCC_A2,B:VA;
+$
+
+PARAMETER G(BCC_A2,CE:VA;
+
+
+$
+
+PARAMETER G(BCC_A2,CR:VA;
+$
+
+FUNCTION GBCCCU 298.15 4017.00-1.255*T+GHSERCU;
+PARAMETER G(BCC_A2,CU:VA;
+$
+
+PARAMETER G(BCC_A2,FE:VA;
+$
+
+FUNCTION GBCCHF 298.15 +5370.703+103.836026*T-22.8995*T*LN(T)
+
+
+PARAMETER G(BCC_A2,HF:VA;
+$
+
+PARAMETER G(BCC_A2,LI:VA;
+$
+
+FUNCTION GBCCMG 298.15 3100.00-2.1*T+GHSERMG;
+PARAMETER G(BCC_A2,MG:VA;
+$
+
+FUNCTION GBCCMN 298.15 -3235.3+127.85*T-23.7*T*LOG(T)
+PARAMETER G(BCC_A2,MN:VA;
+$
+
+PARAMETER G(BCC_A2,MO:VA;
+$
+
+PARAMETER G(BCC_A2,NB:VA;
+$
+
+PARAMETER G(BCC_A2,ND:VA;
+
+
+$
+
+FUNCTION GBCCNI 298.15 +8715.084-3.556*T+GHSERNI;
+PARAMETER G(BCC_A2,NI:VA;
+$
+
+FUNCTION GBCCSI 298.15 +47000.0-22.5*T+GHSERSI;
+PARAMETER G(BCC_A2,SI:VA;
+$
+
+PARAMETER G(BCC_A2,SN:VA;
+$
+
+PARAMETER G(BCC_A2,TA:VA;
+$
+
+FUNCTION GBCCTI 298.15 -1272.064+134.71418*T-25.5768*T*LOG(T)
+
+
+PARAMETER G(BCC_A2,TI:VA;
+$
+
+PARAMETER G(BCC_A2,V:VA;
+$
+
+PARAMETER G(BCC_A2,W:VA;
+$
+
+PARAMETER G(BCC_A2,Y:VA;
+
+$
+
+
+
+FUNCTION GBCCZN 298.15 2886.96-2.5104*T+GHSERZN;
+PARAMETER G(BCC_A2,ZN:VA;
+$
+
+PARAMETER G(BCC_A2,ZR:VA;
+
+$
+
+
+
+$-----------------------------------------------------------------------
+
+$
+
+$PHASE FCC_A1
+
+$
+
+$
+
+PARAMETER G(FCC_A1,AL:VA;
+$PARAMETER G(FCC_A1,B:VA;
+PARAMETER G(FCC_A1,CE:VA;
+$
+
+FUNCTION GFCCCR 298.15 7284.0+0.163*T+GHSERCR;
+PARAMETER G(FCC_A1,CR:VA;
+$
+
+PARAMETER G(FCC_A1,CU:VA;
+PARAMETER G(FCC_A1,FE:VA;
+
+
+$
+
+FUNCTION GFCCHF 200.00 +10000-2.2*T+GHSERHF;
+PARAMETER G(FCC_A1,HF:VA;
+$
+
+PARAMETER G(FCC_A1,LI:VA;
+$
+
+PARAMETER G(FCC_A1,MG:VA;
+$
+
+FUNCTION GFCCMO 298.15 7453.698+132.5497*T-23.56414*T*LN(T)
+
+PARAMETER G(FCC_A1,MO:VA;
+$
+
+FUNCTION GFCCMN 298.15 -3439.3+131.884*T-24.5177*T*LOG(T)
+
+PARAMETER G(FCC_A1,MN:VA;
+$
+
+FUNCTION GFCCNB 298.15 +13500+1.7*T+GHSERNB;
+PARAMETER G(FCC_A1,NB:VA;
+PARAMETER G(FCC_A1,ND:VA;
+PARAMETER G(FCC_A1,NI:VA;
+$
+
+$
+
+PARAMETER G(FCC_A1,SI:VA;
+$
+
+$ PEREPEZKO'S VALUE BELOW
+
+PARAMETER G(FCC_A1,SN:VA;
+$
+
+FUNCTION GFCCTA 298.15 +16000+1.7*T+GHSERTA;
+PARAMETER G(FCC_A1,TA:VA;
+$
+
+FUNCTION GFCCTI 298.15 6000.0-0.1*T+GHSERTI;
+PARAMETER G(FCC_A1,TI:VA;
+$
+
+FUNCTION GFCCV 298.15 7500.0+1.7*T+GHSERV;
+PARAMETER G(FCC_A1,V:VA;
+$
+
+FUNCTION GFCCW 298.15 11653.689+131.03*T-24.1*T*LN(T)-1.936E-3*T**2
+PARAMETER G(FCC_A1,W:VA;
+$
+
+$PARAMETER BELOW SUGGESTED BY RWTH
+
+FUNCTION GFCCZN 298.15 2969.82-1.56968*T+GHSERZN;
+PARAMETER G(FCC_A1,ZN:VA;
+$
+
+PARAMETER G(FCC_A1,ZR:VA;
+$
+
+$-------------------------------------------------------------------
+
+$
+
+$PHASE FCC_L12
+
+$
+
+$PARAMETER G(FCC_L12,AL:AL:VA;
+$PARAMETER G(FCC_L12,CR:CR:VA;
+$PARAMETER G(FCC_L12,TI:TI:VA;
+$
+
+$-------------------------------------------------------------------
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+FUNCTION GHCPAL 298.15 5481.0-1.8*T+GHSERAL;
+$
+
+$PARAMETER G(HCP_A3,B:VA;
+$
+
+$
+
+FUNCTION GHCPCR 298.15 4438.00+GHSERCR;
+$
+
+$
+
+
+$
+
+$
+
+$
+
+
+$
+
+FUNCTION GHCPMO 298.15 3803.698+131.9197*T-23.56414*T*LN(T)
+
+$
+
+FUNCTION GHCPNB 298.15 +10000+2.4*T+GHSERNB;
+$
+
+$
+
+$
+
+$
+
+FUNCTION GHCPTA 298.15 +12000+2.4*T+GHSERTA;
+$
+
+$
+
+FUNCTION GHCPV 298.15 4000.0+2.4*T+GHSERV;
+$
+
+FUNCTION GHCPW 298.15 7103.689+130.4*T-24.1*T*LN(T)
+$
+
+$
+
+$
+
+$PHASE HCP_ZN
+
+$MHR NEXT 7 LINES
+
+$
+
+$----------------------------------------------------------------------
+
+$PHASE ALTI
+
+$
+
+$
+
+$PHASE ALM_D019$
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$PHASE BETA_RHOMBO_B
+
+$
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+
+
+$PHASE CBCC_A12
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$$ LINES BELOW UNNECCESSARY IF SPLITTING
+
+$PARAMETER G(BCC_B2,AL:AL:VA;
+$PARAMETER TC(BCC_B2,AL:AL:VA;
+$PARAMETER BMAGN(BCC_B2,AL:AL:VA;
+$
+
+$ LINE BELOW UNNECCESSARY IF SPLITTING
+
+$PARAMETER G(BCC_B2,CU:CU:VA;
+$
+
+$ LINES BELOW UNNECCESSARY IF SPLITTING
+
+$PARAMETER G(BCC_B2,FE:FE:VA;
+$PARAMETER TC(BCC_B2,FE:FE:VA;
+$PARAMETER BMAGN(BCC_B2,FE:FE:VA;
+$
+
+$PARAMETER G(BCC_B2,MG:MG:VA;
+$ LINES BELOW UNNECCESSARY IF SPLITTING
+
+$PARAMETER G(BCC_B2,MO:MO:VA;
+$
+
+$LINE BELOW UNNECESSARY WITH SPLITTING
+
+$PARAMETER G(BCC_B2,NB:NB:VA;
+$
+
+$LINE BELOW UNNECESSARY WITH SPLITTING
+
+$PARAMETER G(BCC_B2,SI:SI:VA;
+$
+
+$
+
+$LINE BELOW UNNECCESSARY IF SPLITTING
+
+$PARAMETER G(BCC_B2,TI:TI:VA;
+$
+
+$
+
+$LINE BELOW UNNECCESSARY IF SPLITTING
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$PHASE BCT_A5
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ PHASE LAVES_C15
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$ PHASE LAVES_C36
+
+$
+
+$
+
+$PHASE CR3 SI_A15
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$PHASE CUB_A13
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$
+
+$
+
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$PHASE DOUBLE-HCP (DHCP)
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$PHASE DIAMOND_A4
+
+$
+
+$
+
+$ INCREASED TO 20+GHSERBB TO PREVENT MIXING STABILISING THE PHASE IN
+
+$ THE B-C SYSTEM
+
+
+$
+
+$-----------------------------------------------------------------------
+
+
+
+$-----------------------------------------------------------------------
+
+$
+
+$PHASE GRAPHITE
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$ PHASE LAVES_C14
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$ PHASE LIQUID
+
+$
+
+$ IN NIGEL'S FILE FOR AL-TI, ROUNDED VALUES
+
+FUNCTION GLIQAL 298.15 +11005.029-11.841867*T+7.934E-20*T**7
+PARAMETER G(LIQUID,AL;
+$
+
+PARAMETER G(LIQUID,B;
+$
+
+FUNCTION GLIQCC 298.15 +117369-24.63*T+GHSERCC;
+PARAMETER G(LIQUID,C;
+$
+
+FUNCTION GLIQCE 298.15 4117.865-11.423898*T-7.5383948*T*LOG(T)
+PARAMETER G(LIQUID,CE;
+$
+
+PARAMETER G(LIQUID,CR;
+
+
+$
+
+PARAMETER G(LIQUID,CU;
+
+
+$
+
+PARAMETER G(LIQUID,FE;
+
+$
+
+PARAMETER  G(LIQUID,HF;
+
+$
+
+PARAMETER G(LIQUID,LI;
+
+
+
+
+
+
+$
+
+PARAMETER G(LIQUID,MG;
+
+$
+
+PARAMETER G(LIQUID,MN;
+
+$
+
+PARAMETER G(LIQUID,MO;
+
+
+$
+
+PARAMETER G(LIQUID,N;
+$
+
+PARAMETER G(LIQUID,NB;
+$
+
+PARAMETER G(LIQUID,ND;
+$
+
+PARAMETER G(LIQUID,NI;
+
+$
+
+PARAMETER G(LIQUID,SI;
+
+$
+
+FUNCTION GLIQSN 100.00 -855.425+108.677684*T-25.858*T*LOG(T)
+
+
+
+
+
+PARAMETER G(LIQUID,SN;
+$
+
+FUNCTION GLIQTA 298.15 +29160.975-7.578729*T+GHSERTA;
+
+PARAMETER G(LIQUID,TA;
+$
+
+FUNCTION GLIQTI 298.15 12194.415-6.980938*T+GHSERTI;
+
+
+PARAMETER G(LIQUID,TI;
+$
+
+FUNCTION GLIQV 298.15
+PARAMETER G(LIQUID,V;
+$         2183.00 Y -19617.51+311.055983*T-47.43*T*LOG(T);
+$
+
+PARAMETER G(LIQUID,W;
+
+$
+
+$
+
+PARAMETER G(LIQUID,Y;
+
+
+$
+
+PARAMETER G(LIQUID,ZN;
+
+
+$
+
+FUNCTION GLIQZR 130.00 +18147.703-9.080762*T+1.6275E-22*T**7
+
+PARAMETER G(LIQUID,ZR;
+$           2128.00  Y -8281.26+253.812609*T-42.144*T*LOG(T);
+$
+
+$PHASE OMEGA
+
+$
+
+$
+
+$
+
+$***********************************************************************
+
+$
+
+
+
+$                        PARAMETERS FOR BINARY SYSTEMS
+
+$
+
+$
+
+$***********************************************************************
+
+$
+
+$                          SYSTEM  AL-B  (LEO, D9 )
+
+$
+
+$                          ------------
+
+$
+
+$PHASE ALB2
+
+$
+
+$
+
+$PHASE ALB12_ALPHA
+
+$
+
+$
+
+$PHASE ALB12_BETA
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,B:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,B;
+PARAMETER G(LIQUID,AL,B;
+PARAMETER G(LIQUID,AL,B;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-C  (LEO, D9 )
+
+$                ( J. GROEBNER, H. L. LUKAS, AND F. ALDINGER,
+
+$                 "THERMODYNAMIC CALCULATION OF THE AL-SI-C SYSTEM",
+
+$                  CALPHAD 20 (1996) 247-254.)
+
+$                        DATA SENT SEPT. 97
+
+$
+
+$                          ------------
+
+$
+
+$PHASE AL4 C3
+
+$
+
+$PARAMETER G(AL4 C3,AL:C;
+$                                 +4*GHSERAL+3*GHSERCC;
+$
+
+$PHASE FCC_A1
+
+$
+
+$PARAMETER G(FCC_A1,AL:C,VA;
+$
+
+$PHASE LIQUID
+
+$
+
+$PARAMETER G(LIQUID,AL,C;
+$
+
+$PHASE AL4 C3
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL:C;
+PARAMETER G(FCC_A1,AL:C,VA;
+$
+
+$PHASE DIAMOND_A4$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,AL,C;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-CE (I1)
+
+$
+
+$                            (REVISED)
+
+$                          ------------
+
+$
+
+$PHASE AL11_CEND3
+
+$
+
+$PARAMETER G(AL11_CEND3,AL:CE;
+$                                    +11.0*GHSERAL+3.0*GHSERCE;
+$
+
+$
+
+$PHASE AL_CEND3
+
+$
+
+$PARAMETER G(AL_CEND3,AL:CE;
+$                                    +GHSERAL+3.0*GHSERCE;
+$
+
+$PHASE LAVES_C15
+
+$
+
+$PARAMETER G(LAVES_C15,AL:CE;
+$                                    +2*GHSERAL+GHSERCE;
+$
+
+$PHASE AL3_CEND
+
+$
+
+$PARAMETER G(AL3_CEND,AL:CE;
+$                                    +3.0*GHSERAL+GHSERCE;
+$
+
+$PHASE ALCE
+
+$
+
+$PARAMETER G(AL_CEND,AL:CE;
+$                                    +GHSERAL+GHSERCE;
+$
+
+$ PHASE BCC_A2
+
+$
+
+$PARAMETER L(BCC_A2,AL,CE:VA;
+$
+
+$ PHASE FCC_A1
+
+$
+
+$PARAMETER L(FCC_A1,AL,CE:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+$PARAMETER L(LIQUID,AL,CE;
+$PARAMETER L(LIQUID,AL,CE;
+$
+
+$--------------
+
+$
+
+$PHASE AL11_CEND3 H
+
+$
+
+$
+
+$PHASE AL11_CEND3 L
+
+$
+
+$
+
+$
+
+$PHASE AL_CEND3 H
+
+$
+
+$
+
+$
+
+$PHASE AL_CEND3 L
+
+$
+
+$
+
+$PHASE AL2_CEND (LAVES_C15)
+
+$
+
+$
+
+$PHASE AL3_CEND
+
+$
+
+$
+
+$PHASE ALCE
+
+$
+
+$
+
+$ PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,AL,CE:VA;
+$
+
+$ PHASE FCC_A1
+
+$
+
+PARAMETER L(FCC_A1,AL,CE:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,AL,CE;
+PARAMETER L(LIQUID,AL,CE;
+$
+
+$PHASE ALCE_AMORPHOUS
+
+$
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$
+
+$                          SYSTEM  AL-CR (UK1 N. SAUNDERS)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE ALCR2
+
+$
+
+$
+
+$PHASE AL4 CR
+
+$
+
+$
+
+$PHASE AL8 CR5_H
+
+$
+
+$
+
+$PHASE AL8 CR5_L
+
+$
+
+$
+
+$PHASE AL9 CR4_L
+
+$
+
+$
+
+$PHASE AL9 CR4_H
+
+$
+
+$
+
+$PHASE AL11 CR2
+
+$
+
+$
+
+$PHASE AL13 CR2
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,CR:VA;
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,CR:VA;
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,CR;
+PARAMETER G(LIQUID,AL,CR;
+$
+
+$
+
+$
+
+$-----DATA FOR ALTI, ALM_D019, AL3 M_D022, FCC_L12,HCP-A3, BCC-B2
+
+$                AND LAVES_C14 FROM  ALAN---------
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE LAVES_C14
+
+$
+
+$
+
+$
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$ BELOW NIGEL'S FORMAT
+
+$
+
+$FUNCTION ALCRW1 298.15 -1300*R;
+$PARAMETER G(BCC_B2,CR:AL:VA;
+$PARAMETER G(BCC_B2,AL:CR:VA;
+$PARAMETER L(BCC_B2,AL:AL,CR:VA;
+$PARAMETER L(BCC_B2,CR:AL,CR:VA;
+$PARAMETER L(BCC_B2,AL,CR:AL:VA;
+$PARAMETER L(BCC_B2,AL,CR:CR:VA;
+$
+
+$ BELOW BCC_B2 LINKED TO BCC_A2
+
+FUNCTION ALCRW1 298.15 -1300*R;
+$
+
+$PHASE FCC_L12
+
+$
+
+$FUNCTION U1 ALCR 298.15 1.0E-4;
+$
+
+$PARAMETER G(FCC_L12,AL:CR:VA;
+$PARAMETER G(FCC_L12,CR:AL:VA;
+$PARAMETER G(FCC_L12,AL,CR:AL:VA;
+$PARAMETER G(FCC_L12,AL,CR:CR:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-CU (UK1 N. SAUNDERS)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE ALCU_DELTA
+
+$
+
+$PHASE ALCU_EPSILON
+
+$
+
+$PHASE ALCU_DELTA
+
+$
+
+$
+
+$PHASE ALCU_EPSILON
+
+$
+
+$
+
+$PHASE ALCU_ETA
+
+$
+
+$
+
+
+
+$PHASE ALCU_THETA
+
+$
+
+$
+
+$PHASE ALCU_PRIME
+
+$
+
+$
+
+$PHASE ALCU_ZETA
+
+$
+
+$
+
+$PHASE ALCUZN_T (FROM INAKI)
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,CU:VA;
+PARAMETER G(BCC_A2,AL,CU:VA;
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,CU:VA;
+PARAMETER G(FCC_A1,AL,CU:VA;
+PARAMETER G(FCC_A1,AL,CU:VA;
+$
+
+$PHASE HCP_A3 (FROM INAKI CALLED CUZN_EPS)
+
+$
+
+$
+
+$PHASE GAMMA_D83
+
+$
+
+$
+
+$PHASE GAMMA_H
+
+$
+
+$
+
+$LAVES_C14 (FROM TANJA)
+
+$
+
+$FUNCTION C14 RK 270.0 -224000+2.44*T;
+$FUNCTION C14 XRK 270.0 200000;
+$FUNCTION C14 YRK 270.0 200000;
+$C14 RK+C14 YRK= -24000+2.44*T
+
+$C14 RK+C14 XRK= -24000+2.44*T
+
+$
+
+$
+
+$LAVES_C15 (FROM TANJA)
+
+$
+
+$FUNCTION C15 RK 270.0 -180000-1.615*T;
+$FUNCTION C15 XRK 270.0 75000.0;
+$FUNCTION C15 YRK 270.0 75000.0;
+$C15 RK+C15 XRK = -105000-1.615*T
+
+$C15 RK+C15 YRK = -105000-1.615*T
+
+$
+
+$
+
+$LAVES_C36 (FROM TANJA)
+
+$
+
+$FUNCTION C36 RK 270.0 -227442+14.61*T;
+$FUNCTION C36 XRK 270.0 101273;
+$PARAMETER L(LAVES_C36,AL,CU:CU;
+$PARAMETER L(LAVES_C36,AL,CU:AL;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,CU;
+PARAMETER G(LIQUID,AL,CU;
+PARAMETER G(LIQUID,AL,CU;
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-FE ( N1 )
+
+$
+
+$                          ------------
+
+$
+
+$PHASE AL13 FE4
+
+$
+
+$
+
+$PHASE AL2 FE
+
+$
+
+$
+
+$PHASE AL5 FE2
+
+$
+
+$
+
+$
+
+$
+
+$ PHASE AL6 MN (FROM AKE OCT 93)
+
+$
+
+$PARAMETER G(AL6 MN,AL:FE;
+$                                +6.0*GHSERAL+GHSERFE;
+$
+
+$ PHASE AL11 MN4 (FROM AKE OCT 93)
+
+$
+
+$PARAMETER G(AL11 MN4,AL:FE;
+$                                     +4*GHSERFE;
+$
+
+$PHASE AL12 MN (FROM AKE OCT 93)
+
+$
+
+$
+
+$PHASE AL4 MN (FROM TIM JULY 1997)
+
+$
+
+$PHASE BCC_B2
+
+$
+
+$ LINE INSERTED
+
+FUNCTION R 298.15 8.31451;
+FUNCTION ALFEW1 298.15 +860*R;
+FUNCTION LALFEB0 298.15 -30740+7.9972*T+ALFEW1;
+FUNCTION LALFEB1 298.15 368.15;
+FUNCTION ETCALFE 298.15 63;
+$
+
+$-2*ALFEW1+LALFEB0=-37890.5+7.9972*T
+
+$LALFEB0+3*LALFEB1=-22485.0+7.9972*T
+
+$LALFEB0-3*LALFEB1=-24694.0+7.9972*T
+
+$
+
+$PARAMETER G(BCC_B2,FE:AL:VA;
+$                                    +0.5*GBCCAL;
+$PARAMETER TC(BCC_B2,FE:AL:VA;
+$PARAMETER BMAGN(BCC_B2,FE:AL:VA;
+$PARAMETER G(BCC_B2,AL:FE:VA;
+$                                    +0.5*GBCCAL;
+$PARAMETER TC(BCC_B2,AL:FE:VA;
+$PARAMETER BMAGN(BCC_B2,AL:FE:VA;
+$PARAMETER G(BCC_B2,AL,FE:AL:VA;
+$PARAMETER G(BCC_B2,AL,FE:AL:VA;
+$PARAMETER TC(BCC_B2,AL,FE:AL:VA;
+$PARAMETER TC(BCC_B2,AL,FE:AL:VA;
+$PARAMETER BMAGN(BCC_B2,AL,FE:AL:VA;
+$PARAMETER G(BCC_B2,AL:AL,FE:VA;
+$PARAMETER G(BCC_B2,AL:AL,FE:VA;
+$PARAMETER TC(BCC_B2,AL:AL,FE:VA;
+$PARAMETER TC(BCC_B2,AL:AL,FE:VA;
+$PARAMETER BMAGN(BCC_B2,AL:AL,FE:VA;
+$PARAMETER G(BCC_B2,FE:AL,FE:VA;
+$PARAMETER G(BCC_B2,FE:AL,FE:VA;
+$PARAMETER TC(BCC_B2,FE:AL,FE:VA;
+$PARAMETER TC(BCC_B2,FE:AL,FE:VA;
+$PARAMETER BMAGN(BCC_B2,FE:AL,FE:VA;
+$PARAMETER G(BCC_B2,AL,FE:FE:VA;
+$PARAMETER G(BCC_B2,AL,FE:FE:VA;
+$PARAMETER TC(BCC_B2,AL,FE:FE:VA;
+$PARAMETER TC(BCC_B2,AL,FE:FE:VA;
+$PARAMETER BMAGN(BCC_B2,AL,FE:FE:VA;
+$
+
+$LINES BELOW ORDER-DISORDER WITH SPLITTING
+
+$
+
+$PHASE BCC_A2
+
+$
+
+$R=8.31451
+
+$L0 BCC= -30740.04+7.9972*T+W1
+
+$L1 BCC=368.15
+
+$W1=860*R
+
+$FUNCTION R 298.15 8.31451;
+FUNCTION W1 298.15 860*R;
+FUNCTION L0 BCC 298.15 -30740.04+7.9972*T+W1;
+FUNCTION L1 BCC 298.15 368.15;
+PARAMETER G(BCC_A2,AL,FE:VA;
+PARAMETER G(BCC_A2,AL,FE:VA;
+$
+
+$PHASE BCC_B2
+
+$
+
+$
+
+$ALFEW1=860*R
+
+$
+
+$PHASE CBCC_A12 (FROM AKE)
+
+$
+
+$
+
+$
+
+$PHASE CUB_A13 (FROM AKE)
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,FE:VA;
+PARAMETER G(FCC_A1,AL,FE:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$PARAMETER G(HCP_A3,AL,FE:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,FE;
+PARAMETER G(LIQUID,AL,FE;
+PARAMETER G(LIQUID,AL,FE;
+$
+
+$-------------------------------------------------------------------
+
+$
+
+$ THE FOLLOWING PARAMETERS FOR B2 AND A2 REPLACE THE ONES ABOVE IN
+
+$ ORDER TO USE THE 2 SLOD WITH SPLITTING
+
+$
+
+
+
+$FUNCTION R 298.15 8.31451;
+$FUNCTION ALFEW1 298.15 +860*R;
+$FUNCTION LALFEB0 298.15 -30740+7.9972*T+ALFEW1;
+$FUNCTION LALFEB1 298.15 368.15;
+$FUNCTION ETCALFE 298.15 63;
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+$4*LALFEB0-4*ALFEW1=-122960+31.9888*T
+
+$8*LALFEB1=2954.2
+
+$8*ETCALFE=504
+
+$
+
+$PARAMETER G(OBCCA,AL:VA;
+$PARAMETER G(OBCCA,FE:VA;
+$PARAMETER TC(OBCCA,FE:VA;
+$PARAMETER BMAGN(OBCCA,FE:VA;
+$PARAMETER L(OBCCA,AL,FE:VA;
+$PARAMETER L(OBCCA,AL,FE:VA;
+$PARAMETER TC(OBCCA,AL,FE:VA;
+$
+
+$
+
+$
+
+$PHASE BCC_B2
+
+$
+
+$2*ALFEW1=14300
+
+$
+
+$PARAMETER G(OBCCB,AL:AL:VA;
+$PARAMETER G(OBCCB,FE:AL:VA;
+$PARAMETER G(OBCCB,AL:FE:VA;
+$PARAMETER G(OBCCB,FE:FE:VA;
+$
+
+$------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-LI (UK1)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE ALLI
+
+$
+
+$
+
+$PHASE AL2 LI3
+
+$
+
+$
+
+$PHASE AL4 LI9
+
+$
+
+$
+
+$PHASE AL12 MG17
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,LI:VA;
+PARAMETER G(BCC_A2,AL,LI:VA;
+PARAMETER G(BCC_A2,AL,LI:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,LI:VA;
+PARAMETER G(FCC_A1,AL,LI:VA;
+PARAMETER G(FCC_A1,AL,LI:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,LI;
+PARAMETER G(LIQUID,AL,LI;
+PARAMETER G(LIQUID,AL,LI;
+PARAMETER G(LIQUID,AL,LI;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$            SYSTEM  AL-MG (LIQUID, FCC_A1, HCP_A3: UK1)
+
+$                          (ALMG _BETA, _EPS, _GAMMA: UPDATED BY D9)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE ALLI
+
+$(DATA BELOW DUE TO NIGEL)
+
+$PARAMETER G(ALLI,AL:MG;
+$PARAMETER G(ALLI,MG:MG;
+$PARAMETER G(ALLI,MG:VA;
+$
+
+$PHASE ALMG_BETA
+
+$
+
+$
+
+$PHASE ALMG-EPSILON
+
+$
+
+$
+
+$PHASE ALMG_GAMMA
+
+$
+
+$PARAMETER G(ALMG_GAMMA,MG:MG:MG;
+$      +29*GHSERMG;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,MG:VA;
+PARAMETER G(FCC_A1,AL,MG:VA;
+PARAMETER G(FCC_A1,AL,MG:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$ PHASE HCP_ZN
+
+$
+
+$
+
+$PHASE LAVES_C14
+
+$
+
+$ FUNCTION C14 MGAL 4223.7+5.60*T ;
+$ FUNCTION C14 MGAL0 5000 ;
+$ FUNCTION C14 ALMG0 2666.7 ;
+$
+
+$PARAMETER G(LAVES_C14,MG:AL;
+$                                   +GHSERAL+2*GHSERMG;
+$
+
+$
+
+$PHASE LAVES_C15 (FROM TANJA)
+
+$
+
+$FUNCTION C15 AL 270.0 30000. +4.*T;
+$FUNCTION C15 AL1 RK 270.0 15000.;
+$FUNCTION C15 AL2 RK 270.0 8000.;
+$
+
+$
+
+$PHASE LAVES_C36
+
+$
+
+$
+
+$FUNCTION C36 AL 270.0 21734+11.02*T;
+$FUNCTION C36 AL1 RK 270.0 15000.;
+$FUNCTION C36 AL2 RK 270.0 8000.;
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,MG;
+PARAMETER G(LIQUID,AL,MG;
+PARAMETER G(LIQUID,AL,MG;
+$
+
+$PHASE MG2 ZN11
+
+$
+
+$ FUNCTION V_AL +10000.-2.000*T ;
+$
+
+$
+
+$PHASE MG2 ZN3
+
+$
+
+$FUNCTION MG2 ZN3 AL +200.-0.040*T;
+$
+
+$
+
+$PHASE MGZN
+
+$
+
+$FUNCTION MGZN_AL -400.+0.100*T;
+$
+
+$
+
+$PHASE TAU
+
+$
+
+$ FUNCTION TAU3 AL -1000.-2.3*T;
+$ FUNCTION TAU3 MG +5000.+3.0*T;
+$ FUNCTION TAU2 AL3 AL +1000.+1.0*T;
+$ FUNCTION TAU2 AL3 MG +8000.+2.0*T;
+$ FUNCTION TAUMGALRK -2500.-0.5*T;
+$ FUNCTION TAURKAL -200.+3.0*T;
+$ FUNCTION TAURKMG -1300.+3.0*T;
+$ FUNCTION TAUMGZNRK +3000.+1.0*T;
+$
+
+$PARAMETER G(TAU,MG:AL:AL:AL;
+$PARA G(TAU,MG:AL:MG:AL;
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-MN (KTH - S2)
+
+$                              ------------
+
+$
+
+$PHASE AL2 FE (FROM AKE OCT.93)
+
+$
+
+$
+
+$PHASE AL5 FE2 (FROM AKE OCT.93)
+
+$
+
+$
+
+$
+
+$PHASE AL5 FE4 (FROM AKE OCT.93)
+
+$
+
+$PHASE AL11 MN4
+
+$
+
+$
+
+$PHASE AL12 MN
+
+$
+
+$PARAMETER G(AL12 MN,AL:MN;
+$                                     +GHSERMN;
+$
+
+$ PHASE AL13 FE4
+
+$
+
+$
+
+$PHASE AL4 MN
+
+$
+
+$PARAMETER G(AL4 MN,AL:MN;
+$                                     +GHSERMN;
+$
+
+$PHASE AL6 MN
+
+$
+
+$PARAMETER G(AL6 MN,AL:MN;
+$                                     +GHSERMN;
+$
+
+$PHASE AL8 MN5_D810
+
+$
+
+$PARAMETER G(AL8 MN5_D810,AL:MN:AL;
+$       -308671+56.6497*T+22*GHSERAL
+
+$          +4*GHSERMN;
+$PARAMETER G(AL8 MN5_D810,AL:MN:MN;
+$          +14*GHSERMN;
+
+$PARAMETER G(AL8 MN5_D810,AL:MN:AL,MN;
+$                                                      6000.00 N 
+
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,MN:VA;
+PARAMETER G(BCC_A2,AL,MN:VA;
+$
+
+$PHASE CBCC_A12
+
+$
+
+$PARAMETER G(CBCC_A12,AL,MN:VA;
+$VALUE BELOW SENT IN OCTOBER BY AKE
+
+$
+
+$PHASE CUB_A13
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,MN:VA;
+PARAMETER G(FCC_A1,AL,MN:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,MN;
+PARAMETER G(LIQUID,AL,MN;
+PARAMETER G(LIQUID,AL,MN;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-MO (UK1)
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,MO;
+PARAMETER G(LIQUID,AL,MO;
+$
+
+$PHASE AL12 MO
+
+$
+
+$
+
+$PHASE ALM_D019  X  2 3 1 
+
+$
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$PHASE AL4 MO
+
+$
+
+$
+
+$PHASE AL5 MO
+
+$
+
+$
+
+$PHASE AL63 MO37
+
+$
+
+$
+
+$PHASE AL8 MO3
+
+$
+
+$
+
+$PHASE ALMO
+
+$
+
+
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,MO:VA;
+$
+
+$PHASE BCC_B2
+
+$
+
+$PARAMETER G(BCC_B2,MO:AL:VA;
+$PARAMETER G(BCC_B2,AL:MO:VA;
+$PARAMETER G(BCC_B2,AL,MO:AL:VA;
+$PARAMETER G(BCC_B2,AL:AL,MO:VA;
+$PARAMETER G(BCC_B2,MO:AL,MO:VA;
+$PARAMETER G(BCC_B2,AL,MO:MO:VA;
+$FOR SPLITTING
+
+$
+
+$PHASE CUB_A15
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,MO:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-NB  (UK )
+
+$
+
+$                          ------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,AL,NB;
+PARAMETER L(LIQUID,AL,NB;
+PARAMETER L(LIQUID,AL,NB;
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,AL,NB:VA;
+PARAMETER L(BCC_A2,AL,NB:VA;
+PARAMETER L(BCC_A2,AL,NB:VA;
+$
+
+$PHASE BCC_B2
+
+$
+
+FUNCTION ALNBB2 298.15 -8650+1.0*T;
+$$
+
+$PARAMETER G(BCC_B2,AL:NB:VA;
+$PARAMETER G(BCC_B2,NB:AL:VA;
+$PARAMETER L(BCC_B2,NB:AL,NB:VA;
+$PARAMETER L(BCC_B2,AL:AL,NB:VA;
+$PARAMETER L(BCC_B2,AL,NB:NB:VA;
+$PARAMETER L(BCC_B2,AL,NB:AL:VA;
+$
+
+$ FOR SPLITTING
+
+$2.0*ALNBB2= -17300+2*T
+
+$
+
+$
+
+$PHASE CR3 SI-A15
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER L(FCC_A1,AL,NB:VA;
+PARAMETER L(FCC_A1,AL,NB:VA;
+PARAMETER L(FCC_A1,AL,NB:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE SIGMA
+
+$
+
+PARAMETER G(SIGMA,AL:NB:AL;
+PARAMETER G(SIGMA,AL:NB:NB;
+PARAMETER L(SIGMA,AL:NB:AL,NB;
+PARAMETER L(SIGMA,AL:NB:AL,NB;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-N  (LEO, D9 )
+
+$
+
+$                          ------------
+
+$
+
+$PHASE ALN
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL:N;
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL:N;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,N;
+$
+
+$--------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-ND  (I1)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE AL_CEND
+
+$
+
+$
+
+$PHASE ALND2
+
+$
+
+$
+
+$
+
+$PHASE AL11_CEND3 L
+
+$
+
+$
+
+$
+
+$PHASE AL11_CEND3 H
+
+$
+
+$
+
+$PHASE AL_CEND3 L
+
+$
+
+$
+
+$PHASE AL2_CEND (LAVES_C15)
+
+$
+
+$
+
+$PHASE AL3_CEND
+
+$
+
+$
+
+$ PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,ND:VA;
+PARAMETER G(BCC_A2,AL,ND:VA;
+$
+
+$ PHASE HCP_A3
+
+$
+
+$
+
+$ PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,ND;
+PARAMETER G(LIQUID,AL,ND;
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$
+
+$
+
+$                          SYSTEM  AL-SI (H. L. LUKAS, UPDATE 1994-12-14)
+
+$
+
+$                                        ------------
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,SI:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$PARAMETER L(HCP_A3,AL,SI:VA;
+$
+
+$ LINE BELOW ACCORDING TO TIM'S PHONE CALL ON FEB. 19 TH. ACCORDING TO LEO,
+
+$ NO DIFFERENCES IN THE RESULTS IF LINE ABOVE USED.
+
+$
+
+$
+
+$
+
+$PHASE DIAMOND_A4
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,SI;
+PARAMETER G(LIQUID,AL,SI;
+PARAMETER G(LIQUID,AL,SI;
+$
+
+$--------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-SN (H.-L. LUKAS)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCT_A5
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,SN:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,SN;
+PARAMETER G(LIQUID,AL,SN;
+PARAMETER G(LIQUID,AL,SN;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-TA (UK1)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,AL,TA;
+PARAMETER L(LIQUID,AL,TA;
+PARAMETER L(LIQUID,AL,TA;
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$PHASE  AL3 TA2_H
+
+$
+
+$
+
+$PHASE  AL3 TA2_L
+
+$
+
+$
+
+$PHASE  BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,AL,TA:VA;
+PARAMETER L(BCC_A2,AL,TA:VA;
+PARAMETER L(BCC_A2,AL,TA:VA;
+$
+
+$PHASE  BCC_B2
+
+$
+
+$FUNCTION ALTAB2 298.150 -8250+1.0*T;
+$
+
+$PARAMETER G(BCC_B2,TA:AL:VA;
+$PARAMETER G(BCC_B2,AL:TA:VA;
+$PARAMETER L(BCC_B2,AL:AL,TA:VA;
+$PARAMETER L(BCC_B2,TA:AL,TA:VA;
+$PARAMETER L(BCC_B2,AL,TA:AL:VA;
+$PARAMETER L(BCC_B2,AL,TA:TA:VA;
+$
+
+$FOR SPLITTING
+
+$FUNCTION 2.0*ALTAB2 = -16500+2*T
+$
+
+$PHASE  FCC_A1
+
+$
+
+PARAMETER L(FCC_A1,AL,TA:VA;
+$
+
+$PHASE  HCP_A3
+
+$
+
+$
+
+$PHASE  SIGMA
+
+$
+
+PARAMETER G(SIGMA,AL:TA:AL;
+PARAMETER G(SIGMA,AL:TA:TA;
+PARAMETER L(SIGMA,AL:TA:AL,TA;
+PARAMETER L(SIGMA,AL:TA:AL,TA;
+PARAMETER L(SIGMA,AL:TA:AL,TA;
+$
+
+$PHASE  ALM_D019
+
+$
+
+$
+
+$PHASE  ALTI
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-TI (UK1)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+
+
+$
+
+$PHASE AL2 TI
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$
+
+$PHASE CUB_A15
+
+$
+
+$
+
+$PHASE AL3 M_D022
+
+$LINE BELOW FROM ROUND I
+
+$PARAMETER G(AL3 M_D022,AL:TI;
+$                                  +3.0*GHSERAL+GHSERTI;
+$LINES BELOW FOR ROUND II
+
+$PARAMETER G(AL3 M_D022,AL,TI:TI;
+$
+
+$PHASE AL11 TI5
+
+$
+
+$PARAMETER G(AL11 TI5,AL:TI;
+$                               +11.0*GHSERAL+5.0*GHSERTI;
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,TI:VA;
+PARAMETER G(BCC_A2,AL,TI:VA;
+PARAMETER G(BCC_A2,AL,TI:VA;
+$
+
+$PHASE BCC_B2
+
+$ BELOW DATA ACCORDING TO NIGEL'S FORMAT
+
+$
+
+$FUNCTION ALTIB2 298.15 -8750+1.25*T;
+$
+
+$PARAMETER G(BCC_B2,TI:AL:VA;
+$PARAMETER G(BCC_B2,AL:TI:VA;
+$PARAMETER L(BCC_B2,AL:AL,TI:VA;
+$PARAMETER L(BCC_B2,TI:AL,TI:VA;
+$PARAMETER L(BCC_B2,AL,TI:AL:VA;
+$PARAMETER L(BCC_B2,AL,TI:TI:VA;
+$
+
+$PHASE BCC_B2
+
+$ BCC_B2 DATA LINKED TO BCC_A2
+
+$
+
+FUNCTION ALTIB2 298.15 -8750+1.25*T;
+$2.0*ALTIB2=-17500+2.5*T
+
+$
+
+$
+
+$PHASE CR3 SI_A15
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,TI:VA;
+PARAMETER G(FCC_A1,AL,TI:VA;
+PARAMETER G(FCC_A1,AL,TI:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$---------------DATA FOR FCC_L12, LAVES_C14 FROM ALAN-------------
+
+$
+
+$
+
+$PHASE FCC_L12
+
+$
+
+FUNCTION U1 ALTI 298.15 -16755+3.5*T;
+$
+
+$PARAMETER G(FCC_L12,AL:TI:VA;
+$PARAMETER G(FCC_L12,TI:AL:VA;
+$PARAMETER G(FCC_L12,AL,TI:AL:VA;
+$PARAMETER G(FCC_L12,AL,TI:TI:VA;
+$
+
+$PHASE LAVES_C14
+
+$
+
+FUNCTION GAL2 TI 298.15 -121500+31.2*T;
+FUNCTION LAVAL2 TI 298.15 17000;
+$
+
+$
+
+$---------------------------------------------------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,TI;
+PARAMETER G(LIQUID,AL,TI;
+PARAMETER G(LIQUID,AL,TI;
+$
+
+$PHASE SIGMA
+
+$
+
+PARAMETER G(SIGMA,AL:TI:AL;
+PARAMETER G(SIGMA,AL:TI:TI;
+PARAMETER L(SIGMA,AL:TI:AL,TI;
+$
+
+$----------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-Y  (D9)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE AL3 Y
+
+$
+
+$
+
+$PHASE AL2 Y
+
+$
+
+$
+
+$PHASE ALY
+
+$
+
+$
+
+$PHASE AL2 Y3
+
+$
+
+$
+
+$PHASE ALY2
+
+$
+
+$
+
+$PHASE AL3 Y5
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,Y:VA;
+$
+
+$
+
+$$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,Y:VA;
+$
+
+$
+
+$$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,Y;
+PARAMETER G(LIQUID,AL,Y;
+PARAMETER G(LIQUID,AL,Y;
+PARAMETER G(LIQUID,AL,Y;
+PARAMETER G(LIQUID,AL,Y;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-V  (UK1)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE AL10 V
+
+$
+
+$
+
+$PHASE AL23 V4
+
+$
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$ ADDED BY J. ROBINSON
+
+$PARAMETER L(AL3 M_D022,AL,V:V;
+$
+
+$PHASE AL7 V
+
+$
+
+$
+
+$PHASE AL8 V5
+
+$
+
+$
+
+$PARAMETER G(AL8 V5,AL:AL:AL:V;
+$                                   +11.0*GHSERAL+2.0*GHSERV;
+$PARAMETER G(AL8 V5,AL:V:AL:V;
+$                                   +9.0*GHSERAL+4.0*GHSERV;
+$PARAMETER G(AL8 V5,AL:AL:V:V;
+$                                   +8.0*GHSERAL+5.0*GHSERV;
+$PARAMETER G(AL8 V5,AL:V:V:V;
+$                                   +6.0*GHSERAL+7.0*GHSERV;
+$PARAMETER L(AL8 V5,AL:AL,V:AL:V;
+$PARAMETER L(AL8 V5,AL:AL,V:V:V;
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$PARAMETER G(ALM_D019,AL:V;
+$                                   +3.0*GHCPAL+GHCPV;
+$PARAMETER G(ALM_D019,V:AL;
+$                                   +GHCPAL+3.0*GHCPV;
+$ MODIFIED BY J. ROBINSON
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,V:VA;
+PARAMETER G(BCC_A2,AL,V:VA;
+$
+
+$PHASE BCC_B2
+
+$
+
+FUNCTION ALVB2 298.15 -700*R;
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,V:VA;
+PARAMETER G(FCC_A1,AL,V:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,V;
+PARAMETER G(LIQUID,AL,V;
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$----------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-W (UK1)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,W;
+PARAMETER G(LIQUID,AL,W;
+PARAMETER G(LIQUID,AL,W;
+$
+
+$PHASE AL12 W
+
+$
+
+
+$
+
+$PHASE AL2 W
+
+$
+
+
+$
+
+$PHASE AL4 W
+
+$
+
+
+$
+
+$PHASE AL5 W
+
+$
+
+
+$
+
+$PHASE AL77 W23
+
+$
+
+$
+
+$PHASE AL7 W3
+
+$
+
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,W:VA;
+PARAMETER G(BCC_A2,AL,W:VA;
+$
+
+$PHASE BCC_B2
+
+$TWO LINES BELOW SAME WITH OR WITHOUT SPLITTING
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,W:VA;
+PARAMETER G(FCC_A1,AL,W:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$----------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-ZN (S. AN MEY,RWTH AC.)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$
+
+$PHASE ALCU_ETA (FROM INAKI)
+
+$
+
+$
+
+$PHASE ALCUZN_T (FROM INAKI)
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,ZN:VA;
+PARAMETER G(FCC_A1,AL,ZN:VA;
+PARAMETER G(FCC_A1,AL,ZN:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$
+
+$PHASE HCP_ZN
+
+$
+
+$
+
+$ PHASE LAVES_C14
+
+$
+
+$ FUNCTION C14 ALZN0 -2500.-6.000*T ;
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,ZN;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  AL-ZR (UK1)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE AL3 ZR
+
+$
+
+$
+
+$PHASE AL2 ZR
+
+$
+
+$
+
+$PHASE AL3 ZR2
+
+$
+
+$
+
+$PHASE ALZR
+
+$
+
+$
+
+$PHASE AL4 ZR5
+
+$
+
+$
+
+$PHASE AL2 ZR3
+
+$
+
+$
+
+$PHASE AL3 ZR5
+
+$
+
+$
+
+$PHASE ALZR2
+
+$
+
+$
+
+$PHASE ALZR3
+
+$
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,ZR:VA;
+PARAMETER G(BCC_A2,AL,ZR:VA;
+PARAMETER G(BCC_A2,AL,ZR:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,ZR:VA;
+PARAMETER G(FCC_A1,AL,ZR:VA;
+PARAMETER G(FCC_A1,AL,ZR:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,ZR;
+PARAMETER G(LIQUID,AL,ZR;
+PARAMETER G(LIQUID,AL,ZR;
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  B-C(-SI)  (D3)
+
+$
+
+$                          ------------
+
+$
+
+$$ 
+
+$$
+
+$
+
+$ REPLACED BY MHR/ATD 2/9/97
+
+$ RTLNP HAS BEEN ADDED TO ALL FOLLOWING GAS PHASE DATA. (MISSING IN
+
+$PREVIOUS VERSIONS  OF THE DATABASE.
+
+$PARAMETER G(GAS,B1;
+$                       -2.105E-5*T**2;
+
+
+$PARAMETER G(GAS,B2;
+$       -4.5821E-4*T**2+1.7015E-10*T**3-3665441.0*T**(-1);
+
+
+
+$$
+
+$
+
+$PHASE B4 C
+
+$
+
+$PARAMETER G(B4 C,B:C3;
+$                                 +12*GHSERBB+3*GHSERCC;
+$PARAMETER G(B4 C,B:B1 C2;
+$                                 +14*GHSERBB+GHSERCC;
+$PARAMETER G(B4 C,B:B4;
+$                                 +16*GHSERBB;
+$PARAMETER G(B4 C,B:B1 C2,C3;
+$PARAMETER G(B4 C,B:B1 C2,B4;
+$
+
+$PHASE GRAPHITE
+
+$
+
+$PARAMETER G(GRAPHITE,B,C;
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+$PARAMETER G(LIQUID,B,C;
+$PARAMETER G(LIQUID,B,C;
+$
+
+$ THE HF-C-B SYSTEM, OPTIMIZED BY H.BITTERMANN, (AUSTRIA)04/97
+
+$ (FOLLOWING LINES FOR THE B-C SYSTEM)
+
+$
+
+$ PHASE B4 C
+
+$MHR ADDITIONAL FOUR LINES
+
+$
+
+$ PHASE BETA_RHOMBO_B
+
+$
+
+$
+
+$ PHASE GRAPHITE
+
+$
+
+$
+
+$
+
+$PHASE DIAMOND_A4
+
+$
+
+$
+
+$ PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,B,C;
+PARAMETER L(LIQUID,B,C;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  B-HF (A)
+
+$
+
+$
+
+$ PHASE BCC_A2
+
+$
+
+PARAMETER  G(BCC_A2,HF:B;
+PARAMETER G(BCC_A2,HF:B,VA;
+$
+
+$ PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,HF:B;
+PARAMETER G(FCC_A1,HF:B,VA;
+$
+
+$ PHASE HCP_A3
+
+$
+
+
+$
+
+$ PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,B,HF;
+PARAMETER L(LIQUID,B,HF;
+PARAMETER L(LIQUID,B,HF;
+$
+
+$MHR CHANGES IN NEXT THREE PHASES
+
+$
+
+$ PHASE B4 M3 (HF3 B4)
+
+$
+
+$
+
+$ PHASE BM (HFB)
+
+$
+
+$
+
+$ PHASE B2 M (HFB2)
+
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  B-N  (D3) (H. WEN, H.L. LUKAS)
+
+$
+
+$                          ------------
+
+$
+
+$  PHASE GAS
+
+$
+
+$PARAMETER G(GAS,B1;
+$PARAMETER G(GAS,B2;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,B,N;
+$
+
+$ VALUE LARGE POSITIVE, H/S RATIO FROM [90 TAN] = 7500 K
+
+$
+
+$PHASE BN_HP4   (KOPP-NEUMANN-RULE)
+
+$
+
+
+$
+
+$PHASE BN_HP4 (BORON NITRIDE AFTER [JANAF]):
+
+$
+
+$PARAMETER G(BN_HP4,B:N;
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  B-SI  (D9)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE BETA_RHOMBO_B
+
+$
+
+$
+
+$PHASE B_NSI
+
+$
+
+
+
+
+$
+
+$PHASE B3 SI
+
+$
+
+
+$
+
+$PHASE B6 SI
+
+$
+
+
+
+
+$
+
+$PHASE DIAMOND_A4
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,B,SI;
+PARAMETER G(LIQUID,B,SI;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  B-TI  (D9)
+
+$
+
+$                          ------------
+
+$
+
+$MHR  CHANGES IN NEXT THREE PHASES
+
+$PHASE BM
+
+$
+
+$
+
+$PHASE B4 M3
+
+$
+
+
+$
+
+$PHASE B2 M
+
+$
+
+
+$
+
+$
+
+$PHASE DIAMOND_A4
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,TI:B;
+PARAMETER G(BCC_A2,TI:B,VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,B,TI;
+PARAMETER G(LIQUID,B,TI;
+PARAMETER G(LIQUID,B,TI;
+PARAMETER G(LIQUID,B,TI;
+$
+
+$MHR   VALUES FOR G(FCC_A1,TI:B;
+$REQUIRED SOON
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  C-HF (A)
+
+$
+
+$                          ------------
+
+$ PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,HF:C;
+PARAMETER L(BCC_A2,HF:C,VA;
+$
+
+$
+
+$ PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,HF:C;
+
+PARAMETER L(FCC_A1,HF:C,VA;
+PARAMETER L(FCC_A1,HF:C,VA;
+$
+
+$ PHASE HCP_A3
+
+$
+
+$
+
+$ PHASE LIQUID
+
+PARAMETER L(LIQUID,C,HF;
+PARAMETER L(LIQUID,C,HF;
+PARAMETER L(LIQUID,C,HF;
+PARAMETER L(LIQUID,C,HF;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  C-SI  (D9)
+
+$         (PUBLISHED  BY J. GROEBNER, H.L. LUKAS AND F. ALDINGER
+
+$          CALPHAD 20 (1996) 247-254)
+
+$                          ------------
+
+$
+
+$
+
+$PHASE AL4 C3(METASTABLE)
+
+$
+
+$
+
+$PARAMETER G(CSI,C:SI;
+$                                 6000.00 N 
+
+$PHASE CSI
+
+$
+
+$PARAMETER G(CSI,C:SI;
+$                                 6000.00 N 
+
+
+$
+
+$PHASE DIAMOND
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+$PARAMETER G(LIQUID,C,SI;
+$ACCORDING TO LEO'S JULY 1997 FILE -6.38115  INSTEAD OF 6.39115
+
+PARAMETER G(LIQUID,C,SI;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  C-TI  (S2)
+
+$                          (JONSSON)
+
+$                          -----------------
+
+$
+
+FUNCTION GHSERTIC 298.15 -207709+307.438*T-48.0195*T*LOG(T)
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,TI:C;
+PARAMETER G(BCC_A2,TI:C,VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,TI:C;
+PARAMETER G(FCC_A1,TI:C,VA;
+PARAMETER G(FCC_A1,TI:C,VA;
+$
+
+$
+
+$PHASE HCP-A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,C,TI;
+$
+
+$PHASE TI2 N
+
+$
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CE-MG ( I1 )
+
+$
+
+$                          --------------
+
+$
+
+$
+
+$PHASE CEMG
+
+$
+
+$
+
+$PHASE CEMG2
+
+$
+
+$
+
+$PHASE CEMG3
+
+$
+
+$
+
+$PHASE CE5 MG41
+
+$
+
+$
+
+$PHASE CE2 MG17
+
+$
+
+$
+
+$PHASE CEMG12
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CE,MG:VA;
+PARAMETER G(BCC_A2,CE,MG:VA;
+PARAMETER G(BCC_A2,CE,MG:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CE,MG:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CE,MG;
+PARAMETER G(LIQUID,CE,MG;
+PARAMETER G(LIQUID,CE,MG;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CR-CU ( SF1 )
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$ROUND I
+
+$PARAMETER G(BCC_A2,CR,CU:VA;
+$
+
+$ROUND II
+
+PARAMETER G(BCC_A2,CR,CU:VA;
+$
+
+$
+
+$PHASE FCC_A1
+
+$ROUND I
+
+$PARAMETER G(FCC_A1,CR,CU:VA;
+$
+
+$ROUND II
+
+PARAMETER G(FCC_A1,CR,CU:VA;
+$
+
+$PHASE HCP_A3
+
+$ROUND I
+
+$PARAMETER G(HCP_A3,CR,CU:VA;
+$
+
+$ROUND II
+
+$
+
+$PHASE LIQUID
+
+$ROUND I
+
+$PARAMETER G(LIQUID,CR,CU;
+$PARAMETER G(LIQUID,CR,CU;
+$
+
+$ROUND II
+
+PARAMETER G(LIQUID,CR,CU;
+PARAMETER G(LIQUID,CR,CU;
+PARAMETER G(LIQUID,CR,CU;
+$
+
+$PHASE HCP_ZN
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CR-MG (F1)
+
+$
+
+$                          ------------
+
+$
+
+$ VALUES FOR PARAMETERS OF BCC_A2 AND HCP_A3 EQUAL TO LIQUID GIVE
+
+$ IDENTICAL
+
+$ RESULTS THAT IS PARAMETER G(PHASE,CR,MG;
+$ G(PHASE,CR,MG;
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CR,MG:VA;
+$
+
+$PHASE CBCC_A12
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CR,MG:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE HCP_ZN
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CR,MG;
+PARAMETER G(LIQUID,CR,MG;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$
+
+$                         SYSTEM  CR-MN ( S2 ) (KTH)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CR,MN:VA;
+PARAMETER G(BCC_A2,CR,MN:VA;
+$
+
+$PHASE CBCC_A12
+
+$
+
+$
+
+$PHASE CUB_A13
+
+$
+
+$
+
+$
+
+$PHASE CR3 MN5
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CR,MN:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE HIGH_SIGMA
+
+$
+
+$
+
+$PHASE SIGMA
+
+$
+
+PARAMETER G(SIGMA,MN:CR:CR;
+PARAMETER G(SIGMA,MN:CR:MN;
+
+PARAMETER G(SIGMA,MN:CR:CR,MN;
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CR,MN;
+PARAMETER G(LIQUID,CR,MN;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$
+
+$                        SYSTEM  CR-SI ( F3 ) (CORINNE, HIMO AND LEO)
+
+$                                             FEBRUARY 19, 1992
+
+$                         ------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CR,SI;
+PARAMETER G(LIQUID,CR,SI;
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CR,SI:VA;
+PARAMETER G(BCC_A2,CR,SI:VA;
+$
+
+$PHASE CUB_A15
+
+$
+
+
+$
+
+$PHASE CR5 SI3
+
+$
+
+$  FOR 8 MOLES OF ATOMS (IN BINGSS/BINFKT IT IS FOR 1 MOL OF ATOMS)
+
+
+$
+
+$
+
+$PHASE CRSI
+
+$
+
+
+$
+
+$
+
+$PHASE CRSI2
+
+$
+
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CR-TI ( UK1 )
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CR,TI:VA;
+PARAMETER G(BCC_A2,CR,TI:VA;
+PARAMETER G(BCC_A2,CR,TI:VA;
+$
+
+$PHASE LAVES_C15
+
+$
+
+FUNCTION GLAVCR 298.15 +5000+GHSERCR;
+FUNCTION GLAVTI 298.15 +5000+GHSERTI;
+$
+
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CR,TI:VA;
+$
+
+$PHASE LAVES_C14
+
+$
+
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CR,TI;
+PARAMETER G(LIQUID,CR,TI;
+$
+
+$----------DATA FOR ALTI,BCC_B2 ,FCC_L12, ALM_D019 AND AL3 M_D022 FROM ALAN--
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$PHASE BCC_B2
+
+$
+
+FUNCTION CRTIW1 298.15 0;
+$
+
+$
+
+$PHASE FCC_L12
+
+$
+
+FUNCTION U1 CRTI 298.15 1.0E-4;
+$
+
+$PARAMETER G(FCC_L12,CR:TI:VA;
+$PARAMETER G(FCC_L12,TI:CR:VA;
+$PARAMETER G(FCC_L12,CR,TI:CR:VA;
+$PARAMETER G(FCC_L12,CR,TI:TI:VA;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CR-ZN ( F3 )
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CR,ZN:VA;
+$
+
+$PHASE CRZN13
+
+$
+
+$
+
+$PHASE CRZN17
+
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CR,ZN:VA;
+$
+
+$MHR ONE LINE
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CR,ZN;
+PARAMETER G(LIQUID,CR,ZN;
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CR-ZR ( SF1 + FR3)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CR,ZR:VA;
+PARAMETER G(BCC_A2,CR,ZR:VA;
+$
+
+$PHASE LAVES_C15
+
+$
+
+$FUNCTION VV1 298.15 70327.735;
+$FUNCTION VV3 298.15 62909.158;
+$FUNCTION VV25 298.15 -87272.834;
+$FUNCTION VV26 298.15 29.915156;
+$
+
+$
+
+$PHASE LAVES_C36
+
+$
+
+$FUNCTION VV5 298.15 5.261396E+04;
+$FUNCTION VV7 298.15 2.93993E+04;
+$FUNCTION VV31 298.15 -7.002608E+04;
+$FUNCTION VV32 298.15 2.090140E+01;
+$
+
+
+$
+
+$PHASE  LAVES_C14
+
+$
+
+$FUNCTION VV11 298.15 5.22986E+04;
+$FUNCTION VV13 298.15 2.605972E+04;
+$FUNCTION VV21 298.15 -8.113766E+03;
+$FUNCTION VV22 298.15 -1.165205E+01;
+$
+
+$
+
+$PHASE  HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CR,ZR;
+PARAMETER G(LIQUID,CR,ZR;
+PARAMETER G(LIQUID,CR,ZR;
+$
+
+$PHASE  FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CR,ZR:VA;
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CU-FE (FR3-S2 . HIMO - AKE )
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CU,FE:VA;
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CU,FE:VA;
+
+PARAMETER G(FCC_A1,CU,FE:VA;
+
+$
+
+$PHASE HCP_A3
+
+$
+
+
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CU,FE;
+
+PARAMETER G(LIQUID,CU,FE;
+
+PARAMETER G(LIQUID,CU,FE;
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CU-LI (UK1)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CU,LI:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+$PARAMETER G(FCC_A1,CU,LI:VA;
+$
+
+$THE PARAMETERS BELOW WERE GIVEN TO IA ON JAN 13 TH. 1994
+
+PARAMETER G(FCC_A1,CU,LI:VA;
+PARAMETER G(FCC_A1,CU,LI:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CU,LI;
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CU-MG (F1-D9-SF1)
+
+$                          (UPDATED BY LEO AND SENT JULY 1997)
+
+$                          ------------
+
+$
+
+$ PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,CU,MG:VA;
+$
+
+$ PHASE BCC_B2
+
+$
+
+$
+
+$ THE DATA FOR THE BCC_B2 BELOW INCLUDES ALSO THE DISORDERED PART AS
+
+$ SENT BY LEO. (NOTE THAT HIS VALUES ARE FOR 2 ATOMS.
+
+$ PHASE BCC_B2
+
+$
+
+$ FUNCTION L0 CM 270.0 -5000.0;
+$ FUNCTION A1 CM 270.0 0.0;
+$PARAMETER G(BCC_B2,CU:MG:VA;
+$                              +0.5*GBCCCU+0.5*GBCCMG;
+$PARAMETER G(BCC_B2,MG:CU:VA;
+$                              +0.5*GBCCCU+0.5*GBCCMG;
+$PARAMETER L(BCC_B2,CU,MG:CU:VA;
+$PARAMETER L(BCC_B2,CU,MG:MG:VA;
+$PARAMETER L(BCC_B2,CU:CU,MG:VA;
+$PARAMETER L(BCC_B2,MG:CU,MG:VA;
+$
+
+$PHASE LAVES_C14
+
+$
+
+
+$
+
+$PHASE LAVES_C15 (CU2 MG)
+
+$
+
+$PARAMETER G(LAVES_C15,CU:CU;
+
+
+$PARAMETER G(LAVES_C15,MG:MG;
+$
+
+$
+
+$PHASE LAVES_C36
+
+$
+
+
+$
+
+$PHASE CUZN_GAMM
+
+$
+
+$FUNCTION K4 -11552.71-1.67824*T;
+$FUNCTION K5 +15732.3-10.26575*T;
+$FUNCTION K7 +9000.0-1.50000*T;
+$13*K4+2*K5+6*K7=-64720.63-51.34862*T
+
+$
+
+$ PHASE CUMG2
+
+$
+
+$
+
+$
+
+$ PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CU,MG:VA;
+$
+
+$
+
+$ PHASE HCP_A3
+
+$
+
+$
+
+$
+
+$PHASE HCP_ZN
+
+$
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CU,MG;
+PARAMETER G(LIQUID,CU,MG;
+$
+
+$ PHASE MG2 ZN11
+
+$
+
+$ FUNCTION V_CU 0.0;
+$
+
+$ PHASE MG2 ZN3
+
+$
+
+$ FUNCTION M2 Z3_CU 0.0;
+$
+
+$ PHASE MGZN
+
+$
+
+$FUNCTION MGZN_CU 0.0;
+$
+
+$
+
+$-------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CU-NI (S. AN MEY,RWTH )
+
+$
+
+$                          ------------
+
+$PHASE FCC_A1
+
+$
+
+$
+
+PARAMETER L(FCC_A1,CU,NI:VA;
+PARAMETER L(FCC_A1,CU,NI:VA;
+$
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,CU,NI:VA;
+PARAMETER L(BCC_A2,CU,NI:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CU,NI;
+PARAMETER G(LIQUID,CU,NI;
+$
+
+$---------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CU-SI (M.H.G. JACOBS,RWTH AC.
+
+$  REVISED BY TATJANA. THE COMPOUNDS CU87 SI13-KAPPA AND CU85 SI15-BETA
+
+$  REPLACED RESPECTIVELY BY HCP-A3 AND BCC_A2. JULY 1997)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$--------------------
+
+$PHASE CU85 SI15_BETA
+
+$
+
+$PARAMETER G(CU85 SI15_BETA,CU:SI;
+$               -23.920296*T*LOG(T)-2.545250E-03*T**2+0.10931E-06*T**3
+
+$                                      +71106*T**(-1);
+$                                    +68623*T**(-1);
+$
+
+$ PHASE CU85 SI15_BETA REPLACED BY BCC_A2
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CU,SI:VA;
+PARAMETER G(BCC_A2,CU,SI:VA;
+PARAMETER G(BCC_A2,CU,SI:VA;
+$
+
+$
+
+$ PHASE BCC_B2
+
+$
+
+$
+
+$
+
+$--------------------
+
+$
+
+$PHASE CU87 SI13_KAPPA
+
+$
+
+$PARAMETER G(CU87 SI13_KAPPA,CU:SI;
+$               -23.945909*T*LOG(T)-0.00256013*T**2+0.11196E-06*T**3
+
+$                                    +68623*T**(-1);
+$
+
+$ PHASE CU87 SI13_KAPPA REPLACED BY HCP-A3
+
+$
+
+$PHASE HCP-A3
+
+$
+
+$
+
+$PHASE HCP-ZN
+
+$
+
+$
+
+$
+
+$--------------------
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CU,SI:VA;
+$
+
+$
+
+$PHASE CU33 SI7_DELTA
+
+$
+
+
+$
+
+$
+
+$--------------------
+
+$
+
+$PHASE CU56 SI11_GAMMA
+
+$
+
+$PARAMETER G(CU56 SI11_GAMMA,CU:SI;
+$               -1709.412*T*LOG(T)-1.698242E-01*T**2+7.19714E-06*T**3
+
+$               +4882290.0*T**(-1);
+$
+
+$ DATA MODIFIED BECAUSE OF THE BCC AND HCP PHASES
+
+$
+
+$
+
+$-------------------
+
+$
+
+$PHASE CU4 SI_EPSILON
+
+$
+
+
+$
+
+$PHASE CU19 SI6_ETA
+
+$
+
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CU,SI;
+PARAMETER G(LIQUID,CU,SI;
+PARAMETER G(LIQUID,CU,SI;
+$
+
+$PHASE LAVES_15
+
+$
+
+$C15 RK+C15 YRK=-193131+20.69*T+208436=15305+20.69*T
+
+$C15 RK+C15 XRK=-193131+20.69*T+208436=15305+20.69*T
+
+$
+
+$
+
+$
+
+$
+
+$---------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CU-Y (D3)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CU,Y:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CU,Y:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CU,Y;
+PARAMETER G(LIQUID,CU,Y;
+PARAMETER G(LIQUID,CU,Y;
+$
+
+$PHASE CU2 Y_H
+
+$
+
+$
+
+$ PHASE CU2 Y_R
+
+$
+
+$
+
+$ PHASE CU4 Y
+
+$
+
+$
+
+$PHASE CU6 Y
+
+$
+
+$
+
+$ PHASE CU7 Y2
+
+$
+
+$
+
+$ PHASE CUY
+
+$
+
+$
+
+$----------------------------------------------------------------------
+
+$
+
+$
+
+$                          SYSTEM  CU-ZN (D9 -- MODIFIED BY D3 )
+
+$
+
+$                          ------------
+
+$
+
+$PHASE ALCU_DELTA (FROM INAKI)
+
+$
+
+$
+
+$PHASE ALCU_EPSILON (FROM INAKI)
+
+$
+
+$
+
+$PHASE ALCU_ETA (FROM INAKI)
+
+$
+
+$
+
+$PHASE ALCU_ZETA (FROM INAKI)
+
+$
+
+$
+
+$PHASE ALCUZN_T (FROM INAKI)
+
+$
+
+FUNCTION L0 298.15 -51595.87+13.06392*T;
+FUNCTION P1 298.15 -3085;
+FUNCTION GCZBCC 298.15 +.5*L0+2*P1+GBCCCU+GBCCZN;
+$PARAMETER G(ALCUZN_T,ZN:CU;
+$                     +90000-1.3696000E+04+9.66*T;
+$
+
+$
+
+$PHASE BCC_B2
+
+$
+
+$FUNCTION L0 298.15 -51595.87+13.06392*T;
+$FUNCTION L1 298.15 +7562.13-6.45432*T;
+$FUNCTION L2 298.15 +30743.74-29.91503*T;
+$FUNCTION K4 298.15 -11552.71-1.67824*T;
+$FUNCTION K5 298.15 +15732.30-10.26575*T;
+$FUNCTION K6 298.15 +37289.20-13.05259*T;
+$FUNCTION P1 298.15 -3085;
+$FUNCTION P2 298.15 -P1;
+$
+
+$PARAMETER G(BCC_B2,CU:ZN:VA;
+$                                      +0.5*GBCCZN;
+$PARAMETER G(BCC_B2,ZN:CU:VA;
+$                                      +0.5*GBCCZN;
+$PARAMETER G(BCC_B2,CU:CU,ZN:VA;
+$                                      +0.1875*L2+P2;
+$PARAMETER G(BCC_B2,CU:CU,ZN:VA;
+$PARAMETER G(BCC_B2,CU:CU,ZN:VA;
+$PARAMETER G(BCC_B2,CU,ZN:CU:VA;
+$                                      +0.1875*L2+P2;
+$PARAMETER G(BCC_B2,CU,ZN:CU:VA;
+$PARAMETER G(BCC_B2,CU,ZN:CU:VA;
+$PARAMETER G(BCC_B2,ZN:CU,ZN:VA;
+$                                      +0.1875*L2+P2;
+$PARAMETER G(BCC_B2,ZN:CU,ZN:VA;
+$PARAMETER G(BCC_B2,ZN:CU,ZN:VA;
+$PARAMETER G(BCC_B2,CU,ZN:ZN:VA;
+$                                      +0.1875*L2+P2;
+$PARAMETER G(BCC_B2,CU,ZN:ZN:VA;
+$PARAMETER G(BCC_B2,CU,ZN:ZN:VA;
+$PARAMETER G(BCC_B2,CU,ZN:CU,ZN:VA;
+$
+
+$PHASE CUZN_EPS
+
+$
+
+$PARAMETER G(CUZN_EPS,CU:VA;
+$PARAMETER G(CUZN_EPS,ZN:VA;
+$PARAMETER G(CUZN_EPS,CU,ZN:VA;
+$PARAMETER G(CUZN_EPS,CU,ZN:VA;
+$
+
+$PHASE BCC_B2
+
+$
+
+$FUNCTION L0 CZ 298.15 -25797.94+6.53196*T;
+$FUNCTION L1 CZ 298.15 +1890.53-1.61358*T;
+$FUNCTION L2 CZ 298.15 +3842.97-3.73938*T;
+$FUNCTION A1 CZ 298.15 -6170;
+$
+
+$DIVIDED BY TWO  (NUMBER OF SITES 0.5 0.5)
+
+$
+
+FUNCTION L0 CZ 298.15 -12898.97+3.26598*T;
+FUNCTION L1 CZ 298.15 +945.265-0.80679*T;
+FUNCTION L2 CZ 298.15 +1921.485-1.86969*T;
+FUNCTION A1 CZ 298.15 -3085;
+$
+
+$PARAMETER G(BCC_B2,CU:CU:VA;
+$PARAMETER G(BCC_B2,ZN:CU:VA;
+$     6000.00   N;
+$PARAMETER G(BCC_B2,CU:ZN:VA;
+$     6000.00   N;
+$PARAMETER G(BCC_B2,ZN:ZN:VA;
+$PARAMETER G(BCC_B2,CU,ZN:CU:VA;
+$     6000.00   N;
+$PARAMETER G(BCC_B2,CU,ZN:CU:VA;
+$PARAMETER G(BCC_B2,CU,ZN:CU:VA;
+$PARAMETER G(BCC_B2,CU,ZN:CU,ZN:VA;
+$PARAMETER G(BCC_B2,CU:CU,ZN:VA;
+$     6000.00   N;
+$PARAMETER G(BCC_B2,CU:CU,ZN:VA;
+$PARAMETER G(BCC_B2,CU:CU,ZN:VA;
+$PARAMETER G(BCC_B2,ZN:CU,ZN:VA;
+$     6000.00   N;
+$PARAMETER G(BCC_B2,ZN:CU,ZN:VA;
+$PARAMETER G(BCC_B2,ZN:CU,ZN:VA;
+$PARAMETER G(BCC_B2,CU,ZN:ZN:VA;
+$     6000.00   N;
+$PARAMETER G(BCC_B2,CU,ZN:ZN:VA;
+$PARAMETER G(BCC_B2,CU,ZN:ZN:VA;
+$
+
+$---------------A2-B2 ORDERING WITH SPLITTING-----------------------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CU,ZN:VA;
+PARAMETER G(BCC_A2,CU,ZN:VA;
+PARAMETER G(BCC_A2,CU,ZN:VA;
+$
+
+$PHASE BCC_B2
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,CU,ZN:VA;
+PARAMETER G(FCC_A1,CU,ZN:VA;
+PARAMETER G(FCC_A1,CU,ZN:VA;
+$
+
+$
+
+$PHASE GAMMA_H (FROM INAKI)
+
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE HCP_ZN
+
+$
+
+$
+
+$PHASE CUZN_GAMMA
+
+$
+
+FUNCTION K4 270.0 -11552.71-1.67824*T;
+FUNCTION K5 270.0 +15732.3-10.26575*T;
+FUNCTION K6 270.0 +37289.2-13.05259*T;
+$13*K4+2*K5=-118720.63-42.34862*T
+
+$13*K4+2*K5+2*K6=-44142.23-68.4538*T
+
+$13*K4=-150185.23-21.81712*T
+
+$13*K4+2*K6=-75606.83-47.9223*T
+
+$
+
+
+
+$PHASE LAVES_C14
+
+$
+
+$
+
+$
+
+$PHASE LAVES_C15
+
+$
+
+$
+
+$
+
+$PHASE LAVES_C36
+
+$
+
+$
+
+$
+
+$ PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CU,ZN;
+PARAMETER G(LIQUID,CU,ZN;
+PARAMETER G(LIQUID,CU,ZN;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  CU-ZR (SF1)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CU,ZR:VA;
+$
+
+$PHASE CU10 ZR7
+
+$
+
+$PHASE CU5 ZR
+
+$
+
+$PHASE CUZR
+
+$
+
+$PHASE CUZR2
+
+$
+
+$
+
+$PHASE CU51 ZR14
+
+$
+
+$
+
+$PHASE CU8 ZR3
+
+$
+
+$PHASE FCC_A1
+
+$
+
+$PARAMETER G(FCC_A1,CU,ZR:VA;
+$
+
+$ROUND II----------------
+
+$
+
+PARAMETER G(FCC_A1,CU,ZR:VA;
+$
+
+$------------------------
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$PARAMETER G(HCP_A3,CU,ZR:VA;
+$
+
+$ROUND II----------------
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$------------------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CU,ZR;
+PARAMETER G(LIQUID,CU,ZR;
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  FE-MG (N1)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,FE,MG:VA;
+$
+
+$
+
+$PHASE CBCC_A12
+
+$
+
+$
+
+$
+
+$PHASE CUB_A13
+
+$
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,FE,MG:VA;
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,FE,MG;
+PARAMETER G(LIQUID,FE,MG;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  FE-MN (KTH - S2)
+
+$
+
+$                          ------------
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,FE,MN:VA;
+$
+
+$PHASE CBCC_A12
+
+$
+
+$
+
+$PHASE CUB_A13
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,FE,MN:VA;
+PARAMETER G(FCC_A1,FE,MN:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE AL5 FE4
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,FE,MN;
+PARAMETER G(LIQUID,FE,MN;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  FE-SI (KTH - S2)
+
+$
+
+$                          ------------
+
+$FOR SPLITTING
+
+$PHASE BCC_A2
+
+$
+
+$FUNCTION R 298.15 8.31451;
+FUNCTION FSL0 BCC 298.15 -27809+11.62*T;
+FUNCTION FESIW1 298.15 +1260*R;
+FUNCTION FSL1 BCC 298.15 -11544;
+FUNCTION FSL2 BCC 298.15 3890;
+FUNCTION ETCFESI 298.15 63;
+PARAMETER G(BCC_A2,FE,SI:VA;
+PARAMETER G(BCC_A2,FE,SI:VA;
+PARAMETER G(BCC_A2,FE,SI:VA;
+$
+
+$PHASE BCC_B2
+
+$
+
+$
+
+$PHASE CBCC_A12
+
+$
+
+$PARAMETER G(CBCC_A12,FE,SI:VA;
+$PARAMETER G(CBCC_A12,FE,SI:VA;
+$PARAMETER G(CBCC_A12,FE,SI:VA;
+$PARAMETER G(CBCC_A12,FE,SI:VA;
+$
+
+$PHASE BCC_B2
+
+$WITHOUT SPLITTING
+
+$
+
+$PARAMETER G(BCC_B2,SI:FE:VA;
+$                                                     +FSL0 BCC;
+$PARAMETER TC(BCC_B2,SI:FE:VA;
+$PARAMETER BMAGN(BCC_B2,SI:FE:VA;
+$PARAMETER G(BCC_B2,FE:SI:VA;
+$                                                     +FSL0 BCC;
+$PARAMETER TC(BCC_B2,FE:SI:VA;
+$PARAMETER BMAGN(BCC_B2,FE:SI:VA;
+$PARAMETER G(BCC_B2,FE,SI:FE:VA;
+$                                   6000.00 N 
+
+$PARAMETER G(BCC_B2,FE,SI:FE:VA;
+$PARAMETER G(BCC_B2,FE,SI:FE:VA;
+$PARAMETER TC(BCC_B2,FE,SI:FE:VA;
+$PARAMETER TC(BCC_B2,FE,SI:FE:VA;
+$PARAMETER BMAGN(BCC_B2,FE,SI:FE:VA;
+$PARAMETER BMAGN(BCC_B2,FE,SI:FE:VA;
+$PARAMETER G(BCC_B2,FE,SI:FE,SI:VA;
+$PARAMETER G(BCC_B2,FE:FE,SI:VA;
+$                                    6000.00 N 
+
+$PARAMETER G(BCC_B2,FE:FE,SI:VA;
+$PARAMETER G(BCC_B2,FE:FE,SI:VA;
+$PARAMETER TC(BCC_B2,FE:FE,SI:VA;
+$PARAMETER TC(BCC_B2,FE:FE,SI:VA;
+$PARAMETER BMAGN(BCC_B2,FE:FE,SI:VA;
+$PARAMETER BMAGN(BCC_B2,FE:FE,SI:VA;
+$PARAMETER G(BCC_B2,SI:FE,SI:VA;
+$                                       6000.00 N 
+
+$PARAMETER G(BCC_B2,SI:FE,SI:VA;
+$MHR CHANGES IN NEXT THREE LINES
+
+$PARAMETER G(BCC_B2,SI:FE,SI:VA;
+$PARAMETER TC(BCC_B2,SI:FE,SI:VA;
+$PARAMETER TC(BCC_B2,SI:FE,SI:VA;
+$PARAMETER BMAGN(BCC_B2,SI:FE,SI:VA;
+$PARAMETER BMAGN(BCC_B2,SI:FE,SI:VA;
+$PARAMETER G(BCC_B2,FE,SI:SI:VA;
+$                                       6000.00 N 
+
+$PARAMETER G(BCC_B2,FE,SI:SI:VA;
+$PARAMETER G(BCC_B2,FE,SI:SI:VA;
+$PARAMETER TC(BCC_B2,FE,SI:SI:VA;
+$PARAMETER TC(BCC_B2,FE,SI:SI:VA;
+$PARAMETER BMAGN(BCC_B2,FE,SI:SI:VA;
+$PARAMETER BMAGN(BCC_B2,FE,SI:SI:VA;
+$
+
+$PHASE CUB_A13
+
+$
+
+$PARAMETER G(CUB_A13,FE,SI:VA;
+$PARAMETER G(CUB_A13,FE,SI:VA;
+$PARAMETER G(CUB_A13,FE,SI:VA;
+$PARAMETER G(CUB_A13,FE,SI:VA;
+$PARAMETER G(CUB_A13,FE,SI:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,FE,SI:VA;
+PARAMETER G(FCC_A1,FE,SI:VA;
+PARAMETER G(FCC_A1,FE,SI:VA;
+$
+
+$PHASE FESI
+
+$
+
+
+$
+
+$PHASE FE2 SI
+
+$
+
+$
+
+$PHASE FE5 SI3
+
+$
+
+$
+
+$PHASE FESI2_H
+
+$
+
+$
+
+$PHASE FESI2_L
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,FE,SI;
+PARAMETER G(LIQUID,FE,SI;
+PARAMETER G(LIQUID,FE,SI;
+PARAMETER G(LIQUID,FE,SI;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  FE-TI (UK)
+
+$
+
+$                          ------------
+
+$
+
+$ PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,FE,TI;
+PARAMETER G(LIQUID,FE,TI;
+$
+
+$ PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,FE,TI:VA;
+PARAMETER G(BCC_A2,FE,TI:VA;
+$
+
+$ PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,FE,TI:VA;
+$
+
+$ PHASE HCP_A3
+
+$
+
+$
+
+$ PHASE FETI
+
+$
+
+$
+
+$ PHASE LAVES_C14
+
+$
+
+
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  HF-TI (A)
+
+$
+
+$                                    -------------
+
+$
+
+$ PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,HF,TI;
+$
+
+$ PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,HF,TI:VA;
+$
+
+$ PHASE HCP_A3
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  LI-MG (N. SAUNDERS)
+
+$
+
+$                                    -------------
+
+$
+
+$PHASE ALLI
+
+$
+
+$
+
+
+
+$PHASE AL12 MG17
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,LI,MG:VA;
+PARAMETER G(BCC_A2,LI,MG:VA;
+PARAMETER G(BCC_A2,LI,MG:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,LI,MG:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,LI,MG;
+PARAMETER G(LIQUID,LI,MG;
+PARAMETER G(LIQUID,LI,MG;
+$
+
+$ DATA FOR FCC_A1 SHOULD BE ADDED
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  LI-ZR (N. SAUNDERS)
+
+$
+
+$                          ------------
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,LI,ZR:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,LI,ZR:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,LI,ZR;
+$
+
+$ BETA ALLI COUNTER PHASE HAS TO BE ADDED
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  MG-MN (N1)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,MG,MN:VA;
+$
+
+$
+
+$PHASE CBCC_A12
+
+$
+
+$
+
+$
+
+$PHASE CUB_A13
+
+$
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,MG,MN:VA;
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,MG,MN;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  MG-NI (JACOBS )
+
+$             (LAVES-C36 REMODELLED TO BE CONSISTENT WITH THE DATABASE
+
+$                          ------------
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,MG,NI:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER L(FCC_A1,MG,NI:VA;
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,MG,NI;
+PARAMETER L(LIQUID,MG,NI;
+$
+
+$PHASE MG2 NI
+
+$
+
+$PARAMETER G(MG2 NI,MG:NI;
+$                                 -120.66*T*LOG(T);
+$
+
+$PHASE LAVES_C36 (MGNI2)
+
+$
+
+$PARAMETER G(LAVES_C36,MG:MG;
+
+
+$PARAMETER G(LAVES_C36,NI:NI;
+$
+
+$PHASE MG2 NI
+
+$
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                  SYSTEM  MG-SI (H.L. LUKAS, UPDATE SENT JULY 1997)
+
+$
+
+$                              ------------
+
+$
+
+$
+
+$ PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,MG,SI:VA;
+$
+
+$ PHASE BCC_B2
+
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$ LINE BELOW ACCORDING TO TIM'S PHONE CALL ON FEB. 19 TH. ACCORDING TO LEO,
+
+$ NO DIFFERENCES IN THE RESULTS IF LINE ABOVE USED.
+
+$
+
+$PARAMETER L(FCC_A1,MG,SI:VA;
+$
+
+$ ACCORDING TO LEO'S PHONE CALL ON JAN. 7 TH, USING THE FOLLOWING LINE
+
+$ DOES NOT CHANGE THE RESULTS COMPARED TO THE LINE ABOVE
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER L(FCC_A1,MG,SI:VA;
+$
+
+$PHASE HCP_ZN
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,MG,SI;
+PARAMETER L(LIQUID,MG,SI;
+PARAMETER L(LIQUID,MG,SI;
+PARAMETER L(LIQUID,MG,SI;
+PARAMETER L(LIQUID,MG,SI;
+$
+
+$PHASE MG2 SI
+
+$
+
+
+$
+
+$PHASE LAVES_C15
+
+$
+
+$C15 SI=41039+ 6.25*T
+
+$C15 SI1 RK=15000
+
+$C15 SI2 RK=8000
+
+$
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  MG-Y  (D9)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,MG,Y:VA;
+PARAMETER G(BCC_A2,MG,Y:VA;
+$
+
+$PHASE FCC_A1 (SET TO 0.0 BY TATJANA)
+
+$
+
+PARAMETER G(FCC_A1,MG,Y:VA;
+$
+
+$PHASE MGY_EPSILON
+
+$
+
+$
+
+$PHASE MGY_GAMMA
+
+$
+
+$
+
+$PHASE MG2 Y
+
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,MG,Y;
+PARAMETER G(LIQUID,MG,Y;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  MG-ZN  (UPDATE SENT JULY 97 - D9)
+
+$
+
+$                          ------------
+
+$
+
+$ PHASE ALMG_BETA
+
+$
+
+$ FUNCTION ZNBETA +900.0 ;
+$ FUNCTION EPSILOZN -6000.+1.200*T ;
+$ FUNCTION ZNGAMMAL -3000.0+2.000*T ;
+$ FUNCTION ZNGAMMMG -5000.0+2.000*T ;
+$ FUNCTION GAMMALRK -4000.0+2.000*T ;
+$
+
+$PARAMETER G(ALMG_GAMMA,MG:ZN:MG;
+$      -87000+58*T+174000.0-29.0*T
+
+$
+
+$
+
+$ PHASE BCC_B2
+
+$
+
+$ FUNCTION L0 MZ -5000.0;
+$ FUNCTION A1 MZ 0.0;
+$
+
+$PARAMETER G(BCC_B2,MG:ZN:VA;
+$                               6000.0 N 
+
+$PARAMETER G(BCC_B2,ZN:MG:VA;
+$                               6000.0 N 
+
+$PARAMETER L(BCC_B2,MG,ZN:MG:VA;
+$PARAMETER L(BCC_B2,MG,ZN:ZN:VA;
+$PARAMETER L(BCC_B2,MG:MG,ZN:VA;
+$PARAMETER L(BCC_B2,ZN:MG,ZN:VA;
+$
+
+$ WITH SPLITTING ONLY THE BCC-A2 AND THE G PARAMETERS FOR BCC_B2 ARE 0.
+
+$
+
+PARAMETER L(BCC_A2,MG,ZN:VA) 298.15 -10000;
+$ PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,MG,ZN:VA;
+PARAMETER G(FCC_A1,MG,ZN:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE HCP_ZN
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,MG,ZN;
+PARAMETER G(LIQUID,MG,ZN;
+PARAMETER G(LIQUID,MG,ZN;
+$
+
+$PHASE MG7 ZN3
+
+$
+
+$
+
+$PHASE MGZN
+
+$
+
+$
+
+$PHASE MG2 ZN3
+
+$
+
+$
+
+$PHASE LAVES_C14
+
+$
+
+$
+
+$ PHASE LAVES_C15
+
+$
+
+$
+
+$ PHASE LAVES_C36
+
+$
+
+$
+
+$PHASE MG2 ZN11
+
+$
+
+$ FUNCTION V_AL +10000.-2.000*T ;
+$PARAMETER G(MG2 ZN11,MG:AL;
+$                                +2*GHSERMG+11*GHSERAL;
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  MG-ZR  (SF1)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,MG,ZR:VA;
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,MG,ZR:VA;
+PARAMETER G(FCC_A1,MG,ZR:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,MG,ZR;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  MN-SI  (N1)
+
+$                            ------------
+
+$
+
+$PHASE AL8 MN5_D810
+
+$
+
+
+$
+
+$PHASE MN3 SI (CF16_DO3)
+
+$
+
+$
+
+$PHASE MNSI (B20_CP8)
+
+$
+
+
+$
+
+$PHASE  MN11 SI19 (T)
+
+$
+
+
+$
+
+$PHASE MN6 SI (HR53_R)
+
+$
+
+
+
+$
+
+$PHASE  MN9 SI2 (OI186_N)
+
+$
+
+
+
+
+$
+
+$PHASE  MN5 SI3 (HP16_D88)
+
+$
+
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,MN,SI:VA;
+
+PARAMETER G(BCC_A2,MN,SI:VA;
+$
+
+$PHASE CBCC_A12
+
+$
+
+$
+
+$PHASE CUB_A13
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,MN,SI:VA;
+PARAMETER G(FCC_A1,MN,SI:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,MN,SI;
+PARAMETER G(LIQUID,MN,SI;
+PARAMETER G(LIQUID,MN,SI;
+PARAMETER G(LIQUID,MN,SI;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  MN-TI  (UK1)
+
+$
+
+$                          ------------
+
+$
+
+$ALPHA_TIMN
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,MN,TI:VA;
+PARAMETER G(BCC_A2,MN,TI:VA;
+$
+
+$PHASE CBCC_A12
+
+$
+
+$
+
+$BETA_TIMN
+
+$
+
+$
+
+$PHASE CUB_A13
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,MN,TI:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LAVES_C14
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,MN,TI;
+PARAMETER G(LIQUID,MN,TI;
+$
+
+$PHASE MN3 TI
+
+$
+
+$PHASE MN4 TI
+
+$
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  MN-ZR (GTT)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,MN,ZR;
+PARAMETER G(LIQUID,MN,ZR;
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,MN,ZR:VA;
+PARAMETER G(BCC_A2,MN,ZR:VA;
+$
+
+$PHASE CBCC_A12
+
+$
+
+$
+
+$PHASE CUB_A13
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,MN,ZR:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE MN2 ZR
+
+$
+
+
+
+
+
+
+
+$
+
+
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  MO-TI  (UK1)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,MO,TI:VA;
+PARAMETER G(BCC_A2,MO,TI:VA;
+$
+
+$PHASE BCC_B2
+
+$
+
+$PARAMETER G(BCC_B2,MO:TI:VA;
+$PARAMETER G(BCC_B2,TI:MO:VA;
+$PARAMETER L(BCC_B2,MO:MO,TI:VA;
+$PARAMETER L(BCC_B2,TI:MO,TI:VA;
+$PARAMETER L(BCC_B2,MO,TI:MO:VA;
+$PARAMETER L(BCC_B2,MO,TI:TI:VA;
+$
+
+$
+
+$ FOR SPLITTING
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,MO,TI:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,MO,TI;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  N-TI  (S2) REPLACED BY D-CLAUSTHAL
+
+$                        TO BE CONSISTENT WITH THE AL-N-TI SYSTEM
+
+$
+
+$                          ------------
+
+$
+
+$......................DATA FROM S2 (BEGIN)
+
+$FUNCTION GHSERTIN 298.15 -357905+330.498*T-52.4587*T*LOG(T)
+$     -9.28E-04*T**2+871000*T**(-1)-2.41E+09*T**(-3);
+$
+
+$PARAMETER G(BCC_A2,TI:N;
+$                                   +GHSERTIN+2*GHSERNN;
+$PARAMETER G(BCC_A2,TI:N,VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+$PARAMETER G(FCC_A1,TI:N;
+$PARAMETER G(FCC_A1,TI:N,VA;
+$PARAMETER G(FCC_A1,TI:N,VA;
+$
+
+$PARAMETER G(HCP_A3,TI:N;
+$                                    +0.5*GHSERTI+0.5*GHSERTIN;
+$PARAMETER G(HCP_A3,TI:N,VA;
+$
+
+$PARAMETER G(LIQUID,N,TI;
+$PARAMETER G(LIQUID,N,TI;
+$
+
+$$PHASE TI2 N
+
+$
+
+$PARAMETER G(TI2 N,TI:N;
+$                                  +GHSERTI+GHSERTIN;
+$
+
+$......................DATA FROM S2 (END)
+
+$
+
+$......................DATA FROM D-CLAUSTHAL(BEGIN)
+
+$
+
+$PHASE GAS
+
+$
+
+$PARAMETER G(GAS,AL1;
+$PARAMETER G(GAS,AL2;
+$PARAMETER G(GAS,N1;
+$PARAMETER G(GAS,N2;
+$PARAMETER G(GAS,N3;
+$
+
+FUNCTION GHSERTIN 298.15 -357905+330.498*T-52.4587*T*LN(T)
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,N,TI;
+PARAMETER G(LIQUID,N,TI;
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,TI:N;
+PARAMETER G(BCC_A2,TI:N,VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,TI:N;
+PARAMETER G(FCC_A1,TI:N,VA;
+PARAMETER G(FCC_A1,TI:N,VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE TI2 N
+
+$
+
+$
+
+$PHASE TI3 N2
+
+$
+
+$
+
+$PHASE TI4 N3
+
+$
+
+$
+
+$......................DATA FROM D-CLAUSTHAL(END)
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  N-V (D-CLAUSTHAL)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+$ CAREFUL 743000+100000 IN KEJUN'S FILE REPLACED BY 843000
+
+PARAMETER G(BCC_A2,V:N;
+
+PARAMETER G(BCC_A2,V:N,VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,V:N;
+PARAMETER G(FCC_A1,V:N,VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,N,V;
+PARAMETER G(LIQUID,N,V;
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  NB-TI (UK)
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,NB,TI;
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,NB,TI:VA;
+PARAMETER L(BCC_A2,NB,TI:VA;
+PARAMETER L(BCC_A2,NB,TI:VA;
+$
+
+$PHASE BCC_B2
+
+$
+
+FUNCTION NBTIB2 298.15 5500;
+$
+
+$PARAMETER G(BCC_B2,TI:NB:VA;
+$PARAMETER G(BCC_B2,NB:TI:VA;
+$PARAMETER L(BCC_B2,NB:NB,TI:VA;
+$PARAMETER L(BCC_B2,TI:NB,TI:VA;
+$PARAMETER L(BCC_B2,NB,TI:NB:VA;
+$PARAMETER L(BCC_B2,NB,TI:TI:VA;
+$
+
+$ FOR SPLITTING
+
+$
+
+$PARAMETER G(BCC_B2,NB:TI:VA;
+$
+
+$PHASE CR3 SI_A15
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER L(FCC_A1,NB,TI:VA;
+PARAMETER L(FCC_A1,NB,TI:VA;
+PARAMETER L(FCC_A1,NB,TI:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  NI-V (GTT)
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,NI,V;
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,NI,V:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,NI,V:VA;
+PARAMETER G(FCC_A1,NI,V:VA;
+PARAMETER G(FCC_A1,NI,V:VA;
+$
+
+$PHASE SIGMA
+
+$
+
+PARAMETER G(SIGMA,NI:V:NI;
+
+
+
+PARAMETER G(SIGMA,NI:V:V) 298.15 -6.6333065E+05+4.0127719E+03*T;
+
+
+
+$
+
+$PHASE NI2 V
+
+$
+
+$PARAMETER G(NI2 V,NI:V) 298.15 -1.2677355E+04+1.1242048E+02*T
+
+$                   -2.1565759E+01*T*LOG(T)-5.0408910E-03*T**2
+
+$                   -4.5844201E+03*T**(-1);
+
+
+$
+
+$PHASE NI3 V
+
+$
+
+$PARAMETER G(NI3 V,NI:V) 298.15  -1.1381240E+04+1.3225463E+02*T
+
+$                   -2.4935415E+01*T*LOG(T)-2.0609187E-03*T**2
+
+$                    -3.4383330E+03*T**(-1);
+
+
+$
+
+$PHASE NI2 V7
+
+$
+
+$PARAMETER G(NI2 V7,NI:V) 298.15 -2.1181571E+04+1.4821172E+02*T
+
+$                   -2.5950742E+01*T*LOG(T)-5.3580850E-04*T**2
+
+$                   -5.7736765E-07*T**3+9.3839690E+04*T**(-1);
+
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  SI-SN (D3)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE DIAMOND_A4
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,SI,SN;
+PARAMETER G(LIQUID,SI,SN;
+PARAMETER G(LIQUID,SI,SN;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  SI-TI (D9 - SEIFFERT)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,SI,TI:VA;
+PARAMETER G(BCC_A2,SI,TI:VA;
+PARAMETER G(BCC_A2,SI,TI:VA;
+$
+
+$PHASE DIAMOND_A4
+
+$
+
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,SI,TI;
+PARAMETER G(LIQUID,SI,TI;
+PARAMETER G(LIQUID,SI,TI;
+$
+
+$
+
+$PHASE SI2 TI
+
+$
+
+$
+
+$PHASE SITI
+
+$
+
+$
+
+$PHASE SI4 TI5
+
+$
+
+$
+
+$PHASE SI3 TI5
+
+$
+
+$
+
+$PHASE SITI3
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  SI-V (UK1)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,SI,V:VA;
+PARAMETER G(BCC_A2,SI,V:VA;
+PARAMETER G(BCC_A2,SI,V:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,SI,V;
+PARAMETER G(LIQUID,SI,V;
+PARAMETER G(LIQUID,SI,V;
+$
+
+$
+
+$PHASE SIV3
+
+$
+
+$PARAMETER G(SIV3,SI:V;
+$                                 +3.0*GHSERV;
+$
+
+$
+
+$PHASE SI2 V
+
+$
+
+$PARAMETER G(SI2 V,SI:V;
+$                                 +GHSERV;
+$
+
+$
+
+$PHASE SI3 V5
+
+$
+
+$PARAMETER G(SI3 V5,SI:V;
+$                                  +5.0*GHSERV;
+$
+
+$
+
+$PHASE SI5 V6
+
+$
+
+$PARAMETER G(SI5 V6,SI:V;
+$                                  +6.0*GHSERV;
+$
+
+
+$
+
+$-------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  SI-Y  (D9)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,SI,Y:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,SI,Y;
+PARAMETER G(LIQUID,SI,Y;
+PARAMETER G(LIQUID,SI,Y;
+$
+
+$PHASE SI3 Y5
+
+$
+
+$
+
+$PHASE SI4 Y5
+
+$
+
+$
+
+$
+
+$PHASE SIY
+
+$
+
+$
+
+$PHASE SI5 Y3_R
+
+$
+
+$
+
+$PHASE SI5 Y3_H
+
+$
+
+$PARAMETER G(SI5 Y3_H,SI:Y;
+$                             +5.0*GHSERSI+3.0*GHSERY;
+$
+
+$PHASE SI2 Y_H
+
+$
+
+$
+
+$PHASE SI2 Y_R
+
+$
+
+$PARAMETER G(SI2 Y_R,SI:Y;
+$                             +2.0*GHSERSI+GHSERY;
+$
+
+$
+
+$-------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  SI-ZN (M.H.G. JACOBS,RWTH AC.)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$
+
+$PHASE DIAMOND_A4
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,SI,ZN:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$MHR ONE LINE
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,SI,ZN:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,SI,ZN;
+PARAMETER G(LIQUID,SI,ZN;
+PARAMETER G(LIQUID,SI,ZN;
+$
+
+$
+
+$-------------------------------------------------------------------
+
+$
+
+$          SYSTEM  SI-ZR (C. GUENEAU, C. SERVANT, I. ANSARA,N. DUPIN)
+
+$
+
+$                          ------------
+
+$
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,SI,ZR:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,SI,ZR:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,SI,ZR;
+PARAMETER G(LIQUID,SI,ZR;
+$
+
+$PHASE SI2 ZR
+
+$
+
+$
+
+$PHASE SI2 ZR3
+
+$
+
+$
+
+$PHASE SI3 ZR5
+
+$
+
+
+$
+
+$PHASE SI4 ZR5
+
+$
+
+$
+
+$PHASE SIZR
+
+$
+
+$
+
+$PHASE SIZR2
+
+$
+
+$
+
+$PHASE SIZR3
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  SN-ZN ( D3 )
+
+$
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,SN,ZN:VA;
+$
+
+$PHASE BCT_A5
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,SN,ZN:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$MHR ONE LINE
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,SN,ZN;
+PARAMETER G(LIQUID,SN,ZN;
+PARAMETER G(LIQUID,SN,ZN;
+$
+
+$-------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  SN-TI (UK1) (F. HAYES)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,SN,TI:VA;
+PARAMETER G(BCC_A2,SN,TI:VA;
+$
+
+$PHASE BCT_A5
+
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,SN,TI;
+PARAMETER G(LIQUID,SN,TI;
+$
+
+$PHASE SNTI3
+
+$
+
+$
+
+$PHASE SNTI2
+
+$
+
+$
+
+$PHASE SN3 TI5
+
+$
+
+$
+
+$PHASE SN5 TI62
+
+$
+
+$
+
+$
+
+$
+
+$-------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  SN-ZR (GTT)
+
+$
+
+$                          ------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,SN,ZR:VA;
+PARAMETER G(BCC_A2,SN,ZR:VA;
+PARAMETER G(BCC_A2,SN,ZR:VA;
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,SN,ZR;
+PARAMETER L(LIQUID,SN,ZR;
+PARAMETER L(LIQUID,SN,ZR;
+$
+
+$PHASE SN2 ZR
+
+$
+
+
+$
+
+$PHASE SN3 ZR5
+
+$
+
+
+$
+
+$PHASE SNZR4
+
+$
+
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  TA-TI (UK)
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,TA,TI;
+PARAMETER L(LIQUID,TA,TI;
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,TA,TI:VA;
+PARAMETER L(BCC_A2,TA,TI:VA;
+$
+
+$PHASE BCC_B2
+
+$LINES BELOW WITH SPLITTING
+
+FUNCTION TATIB2 298.15 2500;
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER L(FCC_A1,TA,TI:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  TI-V (UK1)
+
+$
+
+$                          -------------------
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+$THREE FOLLOWING LINES NEW PARAMETERS SENT BY NIGEL JUNE 1992
+
+PARAMETER G(BCC_A2,TI,V:VA;
+PARAMETER G(BCC_A2,TI,V:VA;
+PARAMETER G(BCC_A2,TI,V:VA;
+$
+
+$PARAMETER G(BCC_A2,TI,V:VA;
+$PARAMETER G(BCC_A2,TI,V:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,TI,V:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$FOLLOWING LINE NEW PARAMETERS SENT BY NIGEL JUNE 1992
+
+$
+
+$PARAMETER G(HCP_A3,TI,V:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+$TWO FOLLOWING LINES NEW PARAMETERS SENT BY NIGEL JUNE 1992
+
+PARAMETER G(LIQUID,TI,V;
+PARAMETER G(LIQUID,TI,V;
+$
+
+$PARAMETER G(LIQUID,TI,V;
+$PARAMETER G(LIQUID,TI,V;
+$
+
+$------------------------------------------------------------------------
+
+$
+
+$                          SYSTEM  TI-W (UK1)
+
+$
+
+$                          -------------------
+
+$
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$PARAMETER G(ALM_D019,TI:W;
+$PARAMETER G(ALM_D019,W:TI;
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,TI,W:VA;
+PARAMETER G(BCC_A2,TI,W:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,TI,W:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,TI,W;
+PARAMETER G(LIQUID,TI,W;
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM V-ZR (GTT)
+
+$
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,V,ZR:VA;
+PARAMETER G(BCC_A2,V,ZR:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,V,ZR;
+PARAMETER G(LIQUID,V,ZR;
+$
+
+$PHASE V2 ZR
+
+$
+
+$***********************************************************************
+
+
+
+$
+
+$                          TERNARY SYSTEMS
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-C-SI (D9)
+
+$
+
+$                ( J. GROEBNER, H. L. LUKAS, AND F. ALDINGER,
+
+$                 "THERMODYNAMIC CALCULATION OF THE AL-SI-C SYSTEM",
+
+$                  CALPHAD 20 (1996) 247-254.)
+
+$                        DATA SENT SEPT. 97
+
+$
+
+$
+
+$
+
+$                        --------------------
+
+$
+
+$$
+
+$PHASE AL8 SIC7
+
+$
+
+
+$
+
+$PHASE AL4 SIC4
+
+$
+
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-CR-TI (UK1)
+
+$
+
+$                        --------------------
+
+$
+
+$---------DATA FOR ALTI, ALM_D019,AL3 M_D022 AND LAVES_C14 FROM ALAN
+
+$
+
+$PHASE ALTI
+
+$
+
+$PARAMETER L(ALTI,AL:CR,TI;
+$PARAMETER L(ALTI,CR,TI:AL;
+$PARAMETER L(ALTI,CR:AL,TI;
+$PARAMETER L(ALTI,AL,TI:CR;
+$PARAMETER L(ALTI,TI:AL,CR;
+$PARAMETER L(ALTI,AL,CR:TI;
+$
+
+$PHASE ALM_D019
+
+$
+
+$PARAMETER L(ALM_D019,AL:CR,TI;
+$PARAMETER L(ALM_D019,CR,TI:AL;
+$PARAMETER L(ALM_D019,CR:AL,TI;
+$PARAMETER L(ALM_D019,AL,TI:CR;
+$PARAMETER L(ALM_D019,TI:AL,CR;
+$PARAMETER L(ALM_D019,AL,CR:TI;
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$PARAMETER G(AL3 M_D022,AL:CR,TI;
+$
+
+$PHASE LAVES_C14
+
+$
+
+$PARAMETER G(LAVES_C14,AL,CR:TI;
+$
+
+$PHASE FCC_L12
+
+$
+
+$PARAMETER G(FCC_L12,AL,CR:TI:VA;
+$PARAMETER G(FCC_L12,TI:AL,CR:VA;
+$PARAMETER G(FCC_L12,AL,TI:CR:VA;
+$PARAMETER G(FCC_L12,CR:AL,TI:VA;
+$PARAMETER G(FCC_L12,CR,TI:AL:VA;
+$PARAMETER G(FCC_L12,AL:CR,TI:VA;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-CU-LI (UK1)
+
+$
+
+$                        --------------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,CU,LI;
+$
+
+$PHASE ALCULI_R
+
+$
+
+$
+
+$PHASE ALCULI_T1
+
+$
+
+$
+
+$PHASE ALCULI_T2
+
+$
+
+$
+
+$PHASE ALCULI_TB
+
+$
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-CU-MG (D3)
+
+$
+
+$                         -------------------
+
+$PHASE Q
+
+$
+
+$PHASE QPHASE 16 ATOMS/MOL
+
+$
+
+FUNCTION QPHA 270.0 -221500+18.46*T;
+$
+
+$
+
+$PHASE SPHASE 4 ATOMS/MOL
+
+$
+
+FUNCTION SPHA 270.0 -63200+4.13*T;
+$
+
+$
+
+$PHASE TAU
+
+$
+
+$PHASE TAU SUBLATTICE PHASE, 81 ATOMS/MOL
+
+$ LEO' DESCRIPTION FOR BINARY AL-MG TPHASE IS USED (FROM AL-MG-ZN)
+
+FUNCTION T3 CU 270.0 -220000.+440.*T;
+FUNCTION T2 AL3 CU 270.0 243000;
+$ LINE BELOW CHANGED BE LEO
+
+FUNCTION TRK 270.0 -4649190+2261.86*T;
+FUNCTION T2 ALRK 270.0 0.;
+$ LINE BELOW CHANGED BE LEO
+
+FUNCTION T3 CUMGRK 270.0 -220000;
+$
+
+$PARAMETER G(TAU,MG:MG:CU:AL;
+$             +1*GHSERAL +32*GHSERMG +48*GHSERCU ;
+$PARAMETER G(TAU,MG:AL:CU:AL;
+$            +7*GHSERAL +26*GHSERMG +48*GHSERCU ;
+$
+
+$PARAMETER L(TAU,MG:AL:AL,CU:AL;
+$PARAMETER L(TAU,MG:MG:AL,CU:AL;
+$PARAMETER L(TAU,MG:MG:CU,MG:AL;
+$
+
+$PHASE V
+
+$
+
+$PHASE VPHASE 13 ATOMS/MOL
+
+FUNCTION VPHA 270.0 -274527.45+13.*T;
+$
+
+$
+
+$PHASE LAVES_C14
+
+$
+
+$PHASE LAVES_C14 3 ATOMS/MOL
+
+$
+
+$FUNCTION C14 RK 270.0 -224000+2.44*T;
+$FUNCTION C14 AL1 RK 270.0 15000.;
+$FUNCTION C14 AL2 RK 270.0 8000.;
+$
+
+$
+
+$PHASE LAVES_C15
+
+$
+
+$PHASE LAVES_C15 3 ATOMS/MOL
+
+$
+
+$FUNCTION C15 RK 270.0 -180000-1.615*T;
+$FUNCTION C15 AL1 RK 270.0 15000.;
+$FUNCTION C15 AL2 RK 270.0 8000.;
+$
+
+$
+
+$PHASE LAVES_C36
+
+$
+
+$PHASE LAVES_C36 3 ATOMS/MOL
+
+$
+
+$ FUNCTION C36 RK 270.0 -227442+14.61*T;
+$ FUNCTION C36 AL1 RK 270.0 15000.;
+$ FUNCTION C36 AL2 RK 270.0 8000.;
+$ FUNCTION C36 YRK 270.0 101273;
+$
+
+$
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-CU-SI (D3)
+
+$
+
+$                         -------------------
+
+$
+
+$ NO TERNARY PARAMETERS. NO TERNARY PHASES
+
+$
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-CU-ZN (D3)
+
+$
+
+$                         -------------------
+
+$
+
+$
+
+$
+
+$PHASE ALCU_DELTA (FROM INAKI)
+
+$
+
+$
+
+$PHASE ALCU_EPSILON (FROM INAKI)
+
+$
+
+$
+
+$
+
+$PHASE ALCU_ETA (FROM INAKI)
+
+$
+
+$
+
+$PHASE ALCU_ZETA (FROM INAKI)
+
+$
+
+$
+
+$PHASE ALCUZN_T (FROM INAKI)
+
+$
+
+$
+
+$PHASE BCC_A2 (FROM INAKI)
+
+$
+
+PARAMETER G(BCC_A2,AL,CU,ZN:VA;
+PARAMETER G(BCC_A2,AL,CU,ZN:VA;
+PARAMETER G(BCC_A2,AL,CU,ZN:VA;
+$
+
+$PHASE FCC_A1 (FROM INAKI)
+
+$
+
+PARAMETER G(FCC_A1,AL,CU,ZN:VA;
+PARAMETER G(FCC_A1,AL,CU,ZN:VA;
+PARAMETER G(FCC_A1,AL,CU,ZN:VA;
+$
+
+$PHASE GAMMA_H (FROM INAKI)
+
+$
+
+$
+
+$PHASE HCP_A3 (FROM INAKI) (CALLED CUZN_EPS IN INAKI)
+
+$
+
+$
+
+$
+
+$PHASE HCP_ZN (FROM INAKI) (CALLED HCP_A3 IN INAKI)
+
+$
+
+$
+
+$PHASE LIQUID (FROM INAKI)
+
+$
+
+PARAMETER G(LIQUID,AL,CU,ZN;
+PARAMETER G(LIQUID,AL,CU,ZN;
+PARAMETER G(LIQUID,AL,CU,ZN;
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-FE-MN (S2)
+
+$
+
+$                         -------------------
+
+$
+
+$ PHASE AL6 MN (FROM AKE OCT 93)
+
+$
+
+$PARAMETER G(AL6 MN,AL:FE,MN;
+$
+
+$PARAMETER G(AL6 MN,AL:FE,MN;
+$
+
+$ PHASE AL8 MN5_D810 (FROM AKE OCT 93)
+
+$
+
+$PARAMETER G(AL8 MN5_D810,AL:MN:FE;
+$                                   4.0*GHSERMN+10.0*GHSERFE;
+$PARAMETER G(AL8 MN5_D810,AL:MN:AL,FE;
+$PARAMETER G(AL8 MN5_D810,AL:MN:FE,MN;
+$
+
+$PHASE AL13 FE4
+
+$
+
+$
+
+$PHASE AL4 MN
+
+$
+
+$
+
+$PHASE AL11 MN4
+
+$
+
+$
+
+$PHASE AL2 FE
+
+$
+
+$
+
+$PHASE AL5 FE2
+
+$
+
+$
+
+$PHASE AL12 MN
+
+$
+
+$
+
+$PHASE CUB_A13
+
+$
+
+$PARAMETER G(CUB_A13,AL,FE,MN:VA;
+$PARAMETER G(CUB_A13,AL,FE,MN:VA;
+$PARAMETER G(CUB_A13,AL,FE,MN:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,FE,MN:VA;
+PARAMETER G(FCC_A1,AL,FE,MN:VA;
+PARAMETER G(FCC_A1,AL,FE,MN:VA;
+$
+
+$PHASE BCC_A2
+
+$
+
+$PARAMETER G(BCC_A2,AL,FE,MN:VA;
+$PARAMETER G(BCC_A2,AL,FE,MN:VA;
+$PARAMETER G(BCC_A2,AL,FE,MN:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+$PARAMETER G(LIQUID,AL,FE,MN;
+PARAMETER G(LIQUID,AL,FE,MN;
+PARAMETER G(LIQUID,AL,FE,MN;
+PARAMETER G(LIQUID,AL,FE,MN;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-FE-SI (N1)
+
+$
+
+$                         -------------------
+
+$
+
+$PHASE ALFESI_ALPHA
+
+$
+
+$           +0.7604*GHSERAL+0.1901*GHSERFE+0.0496*GHSERSI;
+$PARAMETER G(ALFESI_ALPHA,AL:FE:SI:SI;
+$           +0.6612*GHSERAL+0.1901*GHSERFE+0.1488*GHSERSI;
+$
+
+$PHASE ALFESI_BETA
+
+$
+
+$                +14.0*GHSERAL+3.0*GHSERFE+3.0*GHSERSI  ;
+$
+
+$PHASE ALFESI_GAMMA
+
+$
+
+$
+
+$PHASE ALFESI_DELTA
+
+$
+
+$
+
+$PHASE ALFESI_TAU1
+
+$
+
+$
+
+$PHASE ALFESI_TAU3
+
+$
+
+$
+
+$PHASE FCC_A1
+
+$
+
+PARAMETER G(FCC_A1,AL,FE,SI:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,FE,SI;
+$
+
+$PHASE AL13 FE4
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$
+
+$                        SYSTEM AL-LI-MG (UK1)
+
+$
+
+$                        --------------------
+
+$TO BE USED WITH NIGEL'S AL-MG
+
+$PHASE ALLI
+
+$
+
+$PARAMETER G(ALLI,AL,MG:LI;
+$PARAMETER G(ALLI,AL,MG:LI,MG;
+$PARAMETER G(ALLI,AL:LI,MG;
+$
+
+$PHASE ALLIMG_TAU
+
+$
+
+$PARAMETER G(ALLIMG_TAU,AL:LI:MG;
+$              +0.53*GHSERAL+0.33*GHSERLI+0.14*GHSERMG;
+$
+
+$PHASE ALMG_BETA
+
+$
+
+$PARAMETER G(ALMG_BETA,AL:LI;
+$              +0.615*GHSERAL+0.385*GHSERLI;
+$PARAMETER G(ALMG_BETA,AL:LI,MG;
+$
+
+$PHASE AL12 MG17
+
+$
+
+$PARAMETER G(AL12 MG17,MG:LI:AL;
+$                   +24.0*GHSERMG+10*GHSERLI+24.0*GHSERAL;
+$PARAMETER G(AL12 MG17,LI:MG:AL;
+$                   +10.0*GHSERMG+24*GHSERLI+24.0*GHSERAL;
+$PARAMETER G(AL12 MG17,LI:AL:MG;
+$                   +24.0*GHSERMG+10*GHSERLI+24.0*GHSERAL;
+$PARAMETER G(AL12 MG17,LI,MG:AL:AL;
+$PARAMETER G(AL12 MG17,MG:AL,LI:AL;
+$
+
+$PHASE BCC_A2
+
+$
+
+$PARAMETER G(BCC_A2,AL,LI,MG:VA;
+$
+
+$PHASE FCC_A1
+
+$
+
+$PARAMETER G(FCC_A1,AL,LI,MG:VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$PARAMETER G(HCP_A3,AL,LI,MG:VA;
+$PARAMETER G(HCP_A3,AL,LI,MG:VA;
+$PARAMETER G(HCP_A3,AL,LI,MG:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+$PARAMETER G(LIQUID,AL,LI,MG;
+$PARAMETER G(LIQUID,AL,LI,MG;
+$PARAMETER G(LIQUID,AL,LI,MG;
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$
+
+$                        SYSTEM AL-MG-MN (FR1)
+
+$                        --------------------
+
+$
+
+$PHASE ALMGMN_T
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$
+
+$                SYSTEM  AL-MG-SI (H.L. LUKAS, UPDATE 1994-12-14)
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,AL,MG,SI;
+PARAMETER L(LIQUID,AL,MG,SI;
+PARAMETER L(LIQUID,AL,MG,SI;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                SYSTEM  AL-MG-ZN (H.L. LUKAS, UPDATE SENT JUNE 1997)
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,MG,ZN;
+PARAMETER G(LIQUID,AL,MG,ZN;
+PARAMETER G(LIQUID,AL,MG,ZN;
+$
+
+$ PHASE ALMG_BETA
+
+$
+
+$FUNCTION BETARK -7500.+1.5000*T ;
+$
+
+$
+
+$ PHASE ALMG_GAMMA
+
+$
+
+$ FUNCTION ZNGAMMAL -3000.0+2.000*T;
+$ FUNCTION ZNGAMMMG -5000.0+2.000*T;
+$ FUNCTION GAMMALRK -4000.0+2.000*T;
+$ FUNCTION GAMMMGRK 0.0;
+$
+
+$PARAMETER G(ALMG_GAMMA,MG:AL:ZN;
+$                          29*ZNGAMMMG+145000.0-43.5*T
+
+$
+
+$ PHASE LAVES_C14
+
+$
+
+$ FUNCTION C14 MGAL0 5000 ;
+$ FUNCTION C14 ALMG0 2666.7 ;
+$ FUNCTION C14 ALZN0 -2500.-6.000*T ;
+$
+
+$
+
+$ PHASE PHI
+
+$
+
+$ FUNCTION PHIAL -1400.-1.5*T;
+$ FUNCTION PHIZN -7230.+1.9*T;
+$ FUNCTION PHIRK -2100.+1.0*T;
+$
+
+$
+
+$ PHASE TAU
+
+$
+
+$ FUNCTION TAU3 ZN -10020.+2.0*T;
+$ FUNCTION TAU2 AL3 ZN -260.;
+$ FUNCTION TAURKAL -200.+3.0*T;
+$ FUNCTION TAURKMG -1300.+3.0*T;
+$ FUNCTION TAUMGZNRK +3000.+1.0*T;
+$
+
+$PARAMETER G(TAU,MG:AL:ZN:AL;
+$
+
+$
+
+$MHR 2 FOLLOWING PARAMTERS
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE HCP_ZN
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$
+
+$
+
+$                        SYSTEM AL-MN-SI (N1)
+
+$
+
+$                          --------------
+
+$
+
+$PHASE ALMNSI_ALPHA
+
+$
+
+$PARAMETER G(ALMNSI_ALPHA,AL:MN:SI:AL;
+$                            +18*GHSERAL+4*GHSERMN+GHSERSI;
+$PARAMETER G(ALMNSI_ALPHA,AL:MN:SI:SI;
+$                            +16*GHSERAL+4*GHSERMN+3.0*GHSERSI;
+$
+
+$ NOW REPLACED BY THE FOLLOWING (TIM JAN. 98)
+
+$
+
+$PHASE ALMNSI_ALPHA
+
+$
+
+$
+
+$
+
+$PHASE ALMNSI_DELTA
+
+$
+
+$PARAMETER G(ALMNSI_DELTA,AL:MN:SI;
+$                               +2*GHSERAL+GHSERMN+3*GHSERSI;
+$
+
+$ NOW REPLACED BY THE FOLLOWING (TIM JAN. 98)
+
+$
+
+$PHASE ALMNSI_DELTA
+
+$
+
+$
+
+$
+
+$PHASE ALMNSI_NBETA
+
+$
+
+$PARAMETER G(ALMNSI_NBETA,AL:SI:AL:MN;
+$                 +19*GHSERAL+6.0*GHSERMN+GHSERSI;
+$
+
+$ NOW REPLACED BY THE FOLLOWING (TIM JAN. 98)
+
+$
+
+$PHASE ALMNSI_BETA
+
+$
+
+
+
+$
+
+$PHASE AL8 MN5_D810
+
+$
+
+$
+
+$PHASE LIQUID
+
+$
+
+$PARAMETER G(LIQUID,AL,MN,SI;
+$ NEW VALUE FROM TIM (JAN. 98) BELOW
+
+PARAMETER G(LIQUID,AL,MN,SI;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-MO-TI (UK)
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$PHASE BCC_B2
+
+$PARAMETER L(BCC_B2,MO:AL,TI:VA;
+$PARAMETER L(BCC_B2,AL,TI:MO:VA;
+$PARAMETER L(BCC_B2,MO,TI:AL:VA;
+$PARAMETER L(BCC_B2,AL:MO,TI:VA;
+$PARAMETER L(BCC_B2,TI:AL,MO:VA;
+$PARAMETER L(BCC_B2,AL,MO:TI:VA;
+$
+
+$PHASE CUB_A15
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-N-TI (D-RAINER SCHMIDT-FETZER)
+
+$                        --------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,TI:N;
+PARAMETER G(BCC_A2,AL,TI:N,VA;
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE TI2 ALN
+
+$
+
+$
+
+$PHASE TI3 AL2 N2
+
+$
+
+$
+
+$PHASE TI3 ALN
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-NB-TI (UK)
+
+$
+
+$                          --------------
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE AL3 M_D022
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$PHASE BCC_B2
+
+$
+
+$FUNCTION NBTIB2 298.15 5500;
+$
+
+$
+
+$PHASE HCP_A3
+
+$
+
+$
+
+$PHASE SIGMA
+
+$
+
+PARAMETER G(SIGMA,AL:TI:NB;
+PARAMETER G(SIGMA,AL:NB:TI;
+PARAMETER L(SIGMA,AL:NB:AL,TI;
+PARAMETER L(SIGMA,AL:TI:AL,NB;
+PARAMETER L(SIGMA,AL:TI:AL,NB;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-SI-ZN (D3)
+
+$
+
+$ NO TERNARY INTERACTION COEFFICIENTS. SEE THIRD ANNUAL REPORT 1992
+
+$ COORDINATION GROUP C.
+
+$                          --------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+$'S. AN MEY, K. HACK, Z. METALLKDE VOL 77, (1986) P 454-459
+
+$PARAMETER L(LIQUID,AL,SI,ZN;
+$PARAMETER L(LIQUID,AL,SI,ZN;
+$PARAMETER L(LIQUID,AL,SI,ZN;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-SN-ZR (GTT)
+
+$
+
+$                          --------------
+
+$
+
+$PHASE ALSN2 ZR5
+
+$
+
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$
+
+$                        SYSTEM AL-SN-ZN (D9)
+
+$
+
+$                          --------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,SN,ZN;
+PARAMETER G(LIQUID,AL,SN,ZN;
+PARAMETER G(LIQUID,AL,SN,ZN;
+$
+
+$MHR 2 LINES
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-TA-TI (UK)
+
+$
+
+$ PHASE BCC_B2
+
+$
+
+$ I DO NOT UNDERSTAND
+
+$
+
+$
+
+$ PHASE BCC_A2
+
+$
+
+PARAMETER L(BCC_A2,AL,TA,TI:VA;
+$
+
+$ PHASE HCP_A3
+
+$
+
+$
+
+$ PHASE SIGMA
+
+$
+
+PARAMETER G(SIGMA,AL:TI:TA;
+PARAMETER G(SIGMA,AL:TA:TI;
+PARAMETER L(SIGMA,AL:TA:AL,TI;
+PARAMETER L(SIGMA,AL:TI:AL,TA;
+PARAMETER L(SIGMA,AL:TI:AL,TA;
+PARAMETER L(SIGMA,AL:TI:AL,TA;
+$
+
+$ PHASE ALM_D019
+
+$
+
+$
+
+$ PHASE ALTI
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-TI-V (UK)
+
+$
+
+$                        --------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,AL,TI,V:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,AL,TI,V;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM AL-TI-W
+
+$
+
+$
+
+$PHASE BCC_B2
+
+$
+
+$
+
+$PHASE ALM_D019
+
+$
+
+$
+
+$PHASE ALTI
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM B-C-HF (A)
+
+$
+
+$
+
+$ PHASE FCC_A1
+
+$
+
+PARAMETER L(FCC_A1,HF:B,C;
+$MHR 2 ADDITIONAL LINES
+
+PARAMETER L(BCC_A2,HF:B,C;
+$
+
+$ PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,B,C,HF;
+PARAMETER L(LIQUID,B,C,HF;
+PARAMETER L(LIQUID,B,C,HF;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM B-HF-TI (A)
+
+$
+
+$       H. BITTERMANN, AND P. ROGL,  JPE 18 (1),P. 24-47, 1997.
+
+$
+
+$                        --------------
+
+$ PHASE LIQUID
+
+$
+
+PARAMETER L(LIQUID,B,HF,TI;
+PARAMETER L(LIQUID,B,HF,TI;
+PARAMETER L(LIQUID,B,HF,TI;
+$
+
+$MHR  CHANGES IN NEXT THREE PHASES
+
+$ PHASE BM
+
+$
+
+$
+
+$ PHASE B2 M
+
+$
+
+$
+
+$ PHASE B4 M3
+
+$
+
+$ NOT SURE WHAT THIS PARAMETER IS SUPPOSED TO BE, I ASSUME 
+
+$ - BRANDON BOCKLUND 2021-05-29
+
+$PARAMETER L(B4 M3,B:HF,TI;
+$
+
+$MHR 3 LINES
+
+PARAMETER L(FCC_A1,HF,TI:B;
+PARAMETER L(FCC_A1,HF,TI:VA;
+PARAMETER L(FCC_A1,TI:B,VA;
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM CR-CU-ZR (SF1)
+
+$
+
+$                           --------------
+
+$
+
+$PHASE BCC_A2
+
+$
+
+PARAMETER G(BCC_A2,CR,CU,ZR:VA;
+PARAMETER G(BCC_A2,CR,CU,ZR:VA;
+PARAMETER G(BCC_A2,CR,CU,ZR:VA;
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CR,CU,ZR;
+PARAMETER G(LIQUID,CR,CU,ZR;
+PARAMETER G(LIQUID,CR,CU,ZR;
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$
+
+$                        SYSTEM CU-MG-NI
+
+$
+
+$                        --------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+$PARAMETER G(LIQUID,CU,MG,NI;
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM CU-MG-Y
+
+$
+
+$                        --------------
+
+$
+
+$ NO INTERACTION PARAMETERS FOR THE TERNARY SOLUTION PHASES (TATJANA)
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM CU-MG-SI (D3)
+
+$
+
+$
+
+$                        --------------
+
+$
+
+$PHASE LIQUID
+
+$
+
+PARAMETER G(LIQUID,CU,MG,SI;
+PARAMETER G(LIQUID,CU,MG,SI;
+PARAMETER G(LIQUID,CU,MG,SI;
+$
+
+$PHASE HCP_ZN
+
+$
+
+$
+
+$PHASE LAVES-C15
+
+$
+
+$C15 SI1 RK=15000
+
+$C15 RK=-193131+20.69*T
+
+$C15 SI2 RK=8000
+
+$
+
+$
+
+$PHASE CUMGSI_SIGMA
+
+$
+
+$SIGMAPHA=-559636+110.94*T
+
+$
+
+$
+
+$PHASE CUMGSI_TAU
+
+$
+
+$TAUPHA=-141720+20.26*T
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$                        SYSTEM CU-MG-Y (D3)
+
+$
+
+$                        --------------
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+
+
+$
+
+$                        SYSTEM CU-MG-ZN
+
+$
+
+$                        --------------
+
+$
+
+$ PHASE BCC_B2
+
+$
+
+$ FUNCTION L0 CM -5000.0;
+$ FUNCTION A1 CM 0.0;
+$ FUNCTION A1 CZ -6170.0;
+$ FUNCTION L0 CZ -25797.94+6.53196*T;
+$ FUNCTION L1 CZ +1890.53-1.61358*T;
+$ FUNCTION L2 CZ +3842.97-3.73938*T;
+$ FUNCTION A1 MZ 0.0;
+$ FUNCTION L0 MZ -5000.0;
+$
+
+$  0.5*L0 CM-0.5*A1 CM-0.5*L1 CZ+0.25*L2 CZ=-2484.5225-0.12806*T
+
+$ -0.25*L2 CZ=-960.7425+0.93485*T
+
+$  0.5*L0 CZ-0.5*A1 CZ=-9813.97+3.26598*T
+
+$  0.5*L1 CZ=945.365-0.80679*T
+
+$  0.5*L2 CZ=1921.485-1.86969*T
+
+$  0.25*L2 CZ=960.7425-0.93485*T
+
+$  0.75*L2 CZ=2882.2275-2.80454*T
+
+$  -2.5*L2 CZ=9607.425-9.3485*T
+
+$  0.5*L0 MZ-0.5*A1 MZ+0.5*L1 CZ+0.25*L2 CZ=-594.2575-1.74164*T
+
+$
+
+$ PHASE CUZN_GAMMA
+
+$
+
+$ FUNCTION K4 -11552.71-1.67824*T;
+$ FUNCTION K5 +15732.3-10.26575*T;
+$ FUNCTION K6 +37289.2-13.05259*T;
+$ FUNCTION K7 +9000.0-1.50000*T;
+$ 13*K4+2*K5+2*K6+6*K7=9857.77-77.4538*T
+
+$ 13*K4+6*K7=-96185.23-30.81712*T
+
+$ 13*K4+2*K6+6*K7=-21606.83-56.9223*T
+
+$ INSERTED BY MHR/ATD 2/9/97
+
+$
+
+$ PHASE LAVES_C14
+
+$
+
+$ INSERTED BY MHR/ATD 2/9/97
+
+$
+
+$ PHASE LAVES_C15
+
+$
+
+$ INSERTED BY MHR/ATD 2/9/97
+
+$
+
+$ PHASE LAVES_C36
+
+$
+
+$ INSERTED BY MHR/ATD 2/9/97
+
+$
+
+$ PHASE MG2 ZN11
+
+$
+
+$ FUNCTION V_LCZ -27000.0;
+$
+
+$
+
+$ PHASE MG2 ZN3
+
+$
+
+$FUNCTION M2 Z3_CU0 -20000.0 ;
+$
+
+$
+
+$ PHASE MGZN
+
+$
+
+$ FUNCTION MGZN_CU0 -20000.0;
+$ LINE BELOW CORRECTION MADE BY LEO AND SENT JULY 1998
+
+$ FUNCTION MGZN_CU0 -23000.0;
+$
+
+$
+
+$ PHASE MG7 ZN3
+
+$
+
+$PARAMETER G(MG7 ZN3,MG:ZN;
+$                              +51*GHSERMG+20*GHSERZN;
+$
+
+$MHR 2 LINES
+
+$
+
+$PHASE HCP_ZN
+
+$
+
+$
+
+$-----------------------------------------------------------------------
+
+$
+
+$
+$
+
+$
